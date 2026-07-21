@@ -57,9 +57,9 @@
       "occ.declareH":"A Declaration","occ.declareP":"Say what words alone cannot.",
       "create.eyebrow":"Made to Order","create.title":"Create your candle",
       "create.sub":"Every order is a one-of-a-kind piece. Build yours below — we'll receive your choices and finish the details with you personally.",
-      "create.step1":"Step 01","create.step1t":"Choose your fragrance",
-      "create.step2":"Step 02","create.step2t":"Choose your secret message",
-      "create.step3":"Step 03","create.step3t":"Occasion & details",
+      "create.step1":"Step I","create.step1t":"Choose your fragrance",
+      "create.step2":"Step II","create.step2t":"Choose your secret message",
+      "create.step3":"Step III","create.step3t":"Occasion & details",
       "create.ownlabel":"Or write your own words","create.ownph":"A phrase, a memory, a declaration…",
       "create.msghint":"Hand-set before the final pour — once sealed, it cannot be changed.",
       "create.name":"Your name","create.nameph":"Full name",
@@ -82,7 +82,7 @@
       "gallery.dubai":"From Dubai, with Love.",
       "occname.wedding":"Wedding","occname.birthday":"Birthday","occname.thanks":"Thank You","occname.corporate":"Corporate","occname.newbaby":"New Baby","occname.declaration":"A Declaration","occname.justbecause":"Just Because",
       "toast.pleasechoose":"Please choose","toast.frag":"a fragrance","toast.msgsel":"a secret message","toast.and":"and","toast.complete":"to complete your candle.",
-      "toast.opening":"Opening your email — just press send and we'll take it from there ✦"
+      "toast.opening":"Opening your email — just press send and we'll take it from there ⚜"
     },
 
     /* ---------------- ARABIC (RTL) ---------------- */
@@ -133,9 +133,9 @@
       "occ.declareH":"اعتراف","occ.declareP":"قل ما تعجز عنه الكلمات وحدها.",
       "create.eyebrow":"تُصنع حسب الطلب","create.title":"اصنع شمعتك",
       "create.sub":"كل طلب قطعة فريدة. صمّم شمعتك بالأسفل — سنستلم اختياراتك وننهي التفاصيل معك شخصياً.",
-      "create.step1":"الخطوة ٠١","create.step1t":"اختر عطرك",
-      "create.step2":"الخطوة ٠٢","create.step2t":"اختر رسالتك السرّية",
-      "create.step3":"الخطوة ٠٣","create.step3t":"المناسبة والتفاصيل",
+      "create.step1":"الخطوة I","create.step1t":"اختر عطرك",
+      "create.step2":"الخطوة II","create.step2t":"اختر رسالتك السرّية",
+      "create.step3":"الخطوة III","create.step3t":"المناسبة والتفاصيل",
       "create.ownlabel":"أو اكتب كلماتك الخاصة","create.ownph":"عبارة، ذكرى، أو اعتراف…",
       "create.msghint":"تُكتب يدوياً قبل الصبّة الأخيرة — وبمجرد الختم لا يمكن تغييرها.",
       "create.name":"اسمك","create.nameph":"الاسم الكامل",
@@ -158,7 +158,7 @@
       "gallery.dubai":"من دبي، مع الحب.",
       "occname.wedding":"زفاف","occname.birthday":"عيد ميلاد","occname.thanks":"شكراً","occname.corporate":"شركات","occname.newbaby":"مولود جديد","occname.declaration":"اعتراف","occname.justbecause":"بلا سبب",
       "toast.pleasechoose":"الرجاء اختيار","toast.frag":"عطراً","toast.msgsel":"رسالة سرّية","toast.and":"و","toast.complete":"لإتمام شمعتك.",
-      "toast.opening":"يتم فتح بريدك الإلكتروني — فقط اضغط إرسال وسنتكفّل بالباقي ✦"
+      "toast.opening":"يتم فتح بريدك الإلكتروني — فقط اضغط إرسال وسنتكفّل بالباقي ⚜"
     },
 
     /* ---------------- TURKISH ---------------- */
@@ -209,9 +209,9 @@
       "occ.declareH":"Bir İtiraf","occ.declareP":"Yalnız kelimelerin diyemediğini söyle.",
       "create.eyebrow":"Siparişe Özel","create.title":"Mumunu yarat",
       "create.sub":"Her sipariş eşsiz bir parçadır. Aşağıda kendininkini oluştur — seçimlerini alıp ayrıntıları seninle bizzat tamamlayalım.",
-      "create.step1":"Adım 01","create.step1t":"Kokunu seç",
-      "create.step2":"Adım 02","create.step2t":"Gizli mesajını seç",
-      "create.step3":"Adım 03","create.step3t":"An & ayrıntılar",
+      "create.step1":"Adım I","create.step1t":"Kokunu seç",
+      "create.step2":"Adım II","create.step2t":"Gizli mesajını seç",
+      "create.step3":"Adım III","create.step3t":"An & ayrıntılar",
       "create.ownlabel":"Ya da kendi sözlerini yaz","create.ownph":"Bir cümle, bir anı, bir itiraf…",
       "create.msghint":"Son dökümden önce elle yerleştirilir — mühürlendikten sonra değiştirilemez.",
       "create.name":"Adın","create.nameph":"Ad soyad",
@@ -234,7 +234,7 @@
       "gallery.dubai":"Dubai'den sevgiyle.",
       "occname.wedding":"Düğün","occname.birthday":"Doğum Günü","occname.thanks":"Teşekkür","occname.corporate":"Kurumsal","occname.newbaby":"Yeni Bebek","occname.declaration":"Bir İtiraf","occname.justbecause":"Sebepsiz",
       "toast.pleasechoose":"Lütfen seç:","toast.frag":"bir koku","toast.msgsel":"bir gizli mesaj","toast.and":"ve","toast.complete":"— mumunu tamamlamak için.",
-      "toast.opening":"E-postan açılıyor — sadece gönder'e bas, gerisini biz hallederiz ✦"
+      "toast.opening":"E-postan açılıyor — sadece gönder'e bas, gerisini biz hallederiz ⚜"
     },
 
     /* ---------------- FRENCH ---------------- */
@@ -285,9 +285,9 @@
       "occ.declareH":"Une déclaration","occ.declareP":"Dites ce que les mots seuls ne peuvent dire.",
       "create.eyebrow":"Fait sur commande","create.title":"Créez votre bougie",
       "create.sub":"Chaque commande est une pièce unique. Composez la vôtre ci-dessous — nous recevrons vos choix et finaliserons les détails avec vous personnellement.",
-      "create.step1":"Étape 01","create.step1t":"Choisissez votre fragrance",
-      "create.step2":"Étape 02","create.step2t":"Choisissez votre message secret",
-      "create.step3":"Étape 03","create.step3t":"Occasion & détails",
+      "create.step1":"Étape I","create.step1t":"Choisissez votre fragrance",
+      "create.step2":"Étape II","create.step2t":"Choisissez votre message secret",
+      "create.step3":"Étape III","create.step3t":"Occasion & détails",
       "create.ownlabel":"Ou écrivez vos propres mots","create.ownph":"Une phrase, un souvenir, une déclaration…",
       "create.msghint":"Composé à la main avant la coulée finale — une fois scellé, il ne peut être modifié.",
       "create.name":"Votre nom","create.nameph":"Nom complet",
@@ -310,7 +310,7 @@
       "gallery.dubai":"De Dubaï, avec amour.",
       "occname.wedding":"Mariage","occname.birthday":"Anniversaire","occname.thanks":"Merci","occname.corporate":"Entreprise","occname.newbaby":"Naissance","occname.declaration":"Une déclaration","occname.justbecause":"Sans raison",
       "toast.pleasechoose":"Veuillez choisir","toast.frag":"une fragrance","toast.msgsel":"un message secret","toast.and":"et","toast.complete":"pour compléter votre bougie.",
-      "toast.opening":"Ouverture de votre e-mail — appuyez sur envoyer et nous nous occupons du reste ✦"
+      "toast.opening":"Ouverture de votre e-mail — appuyez sur envoyer et nous nous occupons du reste ⚜"
     },
 
     /* ---------------- RUSSIAN ---------------- */
@@ -361,9 +361,9 @@
       "occ.declareH":"Признание","occ.declareP":"Скажите то, что не под силу одним словам.",
       "create.eyebrow":"Изготовление на заказ","create.title":"Создайте свою свечу",
       "create.sub":"Каждый заказ — уникальная вещь. Соберите свою ниже — мы получим ваш выбор и лично согласуем детали.",
-      "create.step1":"Шаг 01","create.step1t":"Выберите аромат",
-      "create.step2":"Шаг 02","create.step2t":"Выберите секретное послание",
-      "create.step3":"Шаг 03","create.step3t":"Повод и детали",
+      "create.step1":"Шаг I","create.step1t":"Выберите аромат",
+      "create.step2":"Шаг II","create.step2t":"Выберите секретное послание",
+      "create.step3":"Шаг III","create.step3t":"Повод и детали",
       "create.ownlabel":"Или напишите свои слова","create.ownph":"Фраза, воспоминание, признание…",
       "create.msghint":"Набирается вручную перед финальной заливкой — после запечатывания изменить нельзя.",
       "create.name":"Ваше имя","create.nameph":"Полное имя",
@@ -386,7 +386,7 @@
       "gallery.dubai":"Из Дубая, с любовью.",
       "occname.wedding":"Свадьба","occname.birthday":"День рождения","occname.thanks":"Спасибо","occname.corporate":"Компаниям","occname.newbaby":"Новорождённый","occname.declaration":"Признание","occname.justbecause":"Просто так",
       "toast.pleasechoose":"Пожалуйста, выберите","toast.frag":"аромат","toast.msgsel":"секретное послание","toast.and":"и","toast.complete":"— чтобы завершить свечу.",
-      "toast.opening":"Открываем ваше письмо — просто нажмите «отправить», а дальше мы всё сделаем ✦"
+      "toast.opening":"Открываем ваше письмо — просто нажмите «отправить», а дальше мы всё сделаем ⚜"
     },
 
     /* ---------------- HINDI ---------------- */
@@ -437,9 +437,9 @@
       "occ.declareH":"एक इक़रार","occ.declareP":"वह कहें जो अकेले शब्द नहीं कह सकते।",
       "create.eyebrow":"ऑर्डर पर निर्मित","create.title":"अपनी मोमबत्ती बनाएँ",
       "create.sub":"हर ऑर्डर एक अद्वितीय कृति है। नीचे अपनी बनाएँ — हम आपके चयन प्राप्त करेंगे और विवरण आपके साथ व्यक्तिगत रूप से तय करेंगे।",
-      "create.step1":"चरण 01","create.step1t":"अपनी सुगंध चुनें",
-      "create.step2":"चरण 02","create.step2t":"अपना गुप्त संदेश चुनें",
-      "create.step3":"चरण 03","create.step3t":"अवसर और विवरण",
+      "create.step1":"चरण I","create.step1t":"अपनी सुगंध चुनें",
+      "create.step2":"चरण II","create.step2t":"अपना गुप्त संदेश चुनें",
+      "create.step3":"चरण III","create.step3t":"अवसर और विवरण",
       "create.ownlabel":"या अपने शब्द लिखें","create.ownph":"एक वाक्य, एक स्मृति, एक इक़रार…",
       "create.msghint":"अंतिम ढलाई से पहले हाथ से रखा जाता है — सील होने के बाद बदला नहीं जा सकता।",
       "create.name":"आपका नाम","create.nameph":"पूरा नाम",
@@ -462,7 +462,7 @@
       "gallery.dubai":"दुबई से, प्यार के साथ।",
       "occname.wedding":"विवाह","occname.birthday":"जन्मदिन","occname.thanks":"धन्यवाद","occname.corporate":"कॉर्पोरेट","occname.newbaby":"नवजात","occname.declaration":"एक इक़रार","occname.justbecause":"यूँ ही",
       "toast.pleasechoose":"कृपया चुनें","toast.frag":"एक सुगंध","toast.msgsel":"एक गुप्त संदेश","toast.and":"और","toast.complete":"अपनी मोमबत्ती पूरी करने के लिए।",
-      "toast.opening":"आपका ईमेल खुल रहा है — बस भेजें दबाएँ, आगे हम सँभाल लेंगे ✦"
+      "toast.opening":"आपका ईमेल खुल रहा है — बस भेजें दबाएँ, आगे हम सँभाल लेंगे ⚜"
     }
   };
 

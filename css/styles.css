@@ -554,7 +554,10 @@ em{font-style:italic}
 /* =========================================================
    CREATE / BUILDER
    ========================================================= */
-.create{background:var(--wine-900);color:var(--cream);overflow:hidden;isolation:isolate}
+/* No overflow:hidden here — it would break the sticky order summary. The grain
+   is absolutely positioned inside this (position:relative) section already. */
+.create{background:var(--wine-900);color:var(--cream);isolation:isolate}
+.create__grain{overflow:hidden}
 .create__grain{opacity:.4}
 .builder{display:grid;grid-template-columns:1fr minmax(300px,360px);gap:clamp(1.6rem,4vw,3rem);align-items:start;position:relative}
 .builder__main{display:grid;gap:1.4rem}
@@ -909,3 +912,13 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
   font-size:.68rem;letter-spacing:.03em;color:rgba(243,235,219,.4);
   max-width:var(--wrap);margin-inline:auto;line-height:1.5;
 }
+
+/* Order actions at the end of the builder form (desktop; mobile uses the summary) */
+.bstep-actions{
+  display:grid;gap:.7rem;margin-top:.2rem;
+  padding:1.5rem clamp(1.2rem,2.5vw,2rem);
+  border:1px solid rgba(201,162,75,.25);border-radius:6px;background:rgba(255,255,255,.02);
+}
+.bstep-actions .btn{justify-content:center;width:100%}
+.bstep-actions__note{font-size:.74rem;color:rgba(243,235,219,.5);text-align:center;line-height:1.5;margin-top:.1rem}
+@media (max-width:860px){ .bstep-actions{display:none} }

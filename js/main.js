@@ -48,7 +48,7 @@
   function initWhatsApp() {
     if (!WHATSAPP) return;
     if (waFooter) { waFooter.href = waLink(); waFooter.hidden = false; }
-    var owa = $("#orderWa"); if (owa) owa.hidden = false;
+    $$(".js-wa").forEach(function (b) { b.hidden = false; });
     if (!waFab) {
       waFab = document.createElement("a");
       waFab.className = "wa-fab";
@@ -367,8 +367,8 @@
     return { subject: "Bespoke candle order — " + sel.frag + (sel.occ ? " · " + occEN : ""), body: lines.join("\n") };
   }
 
-  var sendBtn = $("#sendOrder");
-  if (sendBtn) sendBtn.addEventListener("click", function () {
+  // Both the sticky summary and the button set at the end of the form share these.
+  function doSendOrder() {
     var o = buildOrder(); if (!o) return;
     toast(t("form.sending"));
     submitToStudio(o.subject, o.body, sel.name, sel.contact, function (ok) {
@@ -376,15 +376,14 @@
       else if (ok === true) toast(t("form.sent"));
       else toast(t("toast.opening"));
     });
-  });
-
-  // Order via WhatsApp — opens WhatsApp to the studio with the full order pre-filled.
-  var orderWaBtn = $("#orderWa");
-  if (orderWaBtn) orderWaBtn.addEventListener("click", function () {
+  }
+  function doOrderWa() {
     if (!WHATSAPP) return;
     var o = buildOrder(); if (!o) return;
     window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(o.body), "_blank", "noopener");
-  });
+  }
+  $$(".js-send").forEach(function (b) { b.addEventListener("click", doSendOrder); });
+  $$(".js-wa").forEach(function (b) { b.addEventListener("click", doOrderWa); });
 
   /* ============================================================
      CONVERSATIONAL CONTACT FORM

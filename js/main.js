@@ -103,19 +103,6 @@
   /* ============================================================
      RENDERING (re-run on language change)
      ============================================================ */
-  var marqueeTrack = $("#marqueeTrack");
-  function renderMarquee() {
-    if (!marqueeTrack) return;
-    var items = [t("marquee.1"), t("marquee.2"), t("marquee.3"), t("marquee.4")];
-    var html = "";
-    for (var r = 0; r < 2; r++) {
-      items.forEach(function (txt) {
-        html += '<span>' + txt + '</span><span class="marquee__dot">✦</span>';
-      });
-    }
-    marqueeTrack.innerHTML = html;
-  }
-
   var fragGrid = $("#fragGrid");
   function renderFragGrid() {
     if (!fragGrid) return;
@@ -306,7 +293,6 @@
 
   /* ---------- Full render + re-render on language change ---------- */
   function renderAll() {
-    renderMarquee();
     renderFragGrid();
     renderRevealList();
     renderFragChips();

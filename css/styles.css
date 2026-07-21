@@ -275,24 +275,6 @@ em{font-style:italic}
 }
 
 /* =========================================================
-   MARQUEE
-   ========================================================= */
-.marquee{
-  background:var(--wine-900);color:var(--gold-bright);
-  border-block:1px solid rgba(201,162,75,.2);
-  overflow:hidden;padding:.9rem 0;
-}
-.marquee__track{
-  display:flex;align-items:center;gap:2.5rem;width:max-content;
-  animation:marq 34s linear infinite;
-  font-family:var(--font-display);font-style:italic;font-size:1.25rem;
-}
-.marquee__track span{white-space:nowrap;opacity:.9}
-.marquee__dot{font-style:normal;color:var(--gold);font-size:.8rem;opacity:.6}
-@keyframes marq{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.marquee__track{animation:none}}
-
-/* =========================================================
    SECTIONS (shared)
    ========================================================= */
 .section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
@@ -398,6 +380,22 @@ em{font-style:italic}
 .reveal-lab__list li{font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:rgba(243,235,219,.82);padding-left:1.4rem;position:relative}
 .reveal-lab__list li::before{content:"⚜";position:absolute;left:0;color:var(--gold);font-size:.8rem;top:.15em}
 .reveal-lab__note{font-size:.85rem;color:rgba(243,235,219,.55);letter-spacing:.02em}
+
+/* real message-disc photography */
+.disc-gallery{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.5vw,1.8rem);
+  max-width:960px;margin:clamp(3rem,6vw,5rem) auto 0;
+}
+.disc{position:relative;border-radius:8px;overflow:hidden;border:1px solid rgba(201,162,75,.3);background:var(--cream-100);box-shadow:var(--shadow-lift);transition:transform .45s var(--ease),border-color .45s}
+.disc:hover{transform:translateY(-6px);border-color:var(--gold)}
+.disc img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center}
+.disc figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:1.4rem 1rem .9rem;
+  font-family:var(--font-display);font-style:italic;font-size:1.02rem;line-height:1.3;
+  color:var(--cream);text-align:center;
+  background:linear-gradient(to top,rgba(43,7,16,.92),rgba(43,7,16,.55) 60%,transparent);
+}
 
 /* =========================================================
    HOW IT WORKS
@@ -566,6 +564,17 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 .footer__loc{font-size:.95rem;color:rgba(243,235,219,.55)}
 .footer__col--cta p{font-size:.95rem;color:rgba(243,235,219,.72);margin-bottom:1rem}
 .footer__col--cta .btn{width:fit-content}
+.footer__trust{
+  position:relative;max-width:var(--wrap);margin:0 auto;width:100%;
+  padding:1.6rem var(--gutter) .4rem;
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+  gap:.6rem 1.6rem;
+}
+.footer__trust span{
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold-bright);opacity:.85;position:relative;display:inline-flex;align-items:center;
+}
+.footer__trust span:not(:last-child)::after{content:"✦";margin-inline-start:1.6rem;color:var(--gold);opacity:.55;font-size:.6rem}
 .footer__base{
   position:relative;border-top:1px solid rgba(201,162,75,.2);
   padding:1.4rem var(--gutter);max-width:var(--wrap);margin-inline:auto;width:100%;
@@ -663,3 +672,8 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
   .header__inner{gap:1rem}
   .lang__btn{padding:.45rem .6rem}
 }
+
+/* disc gallery + footer trust — responsive & i18n */
+[lang="ar"] .footer__trust span,[lang="hi"] .footer__trust span{letter-spacing:normal;text-transform:none}
+@media (max-width:760px){ .disc-gallery{grid-template-columns:1fr;max-width:420px} }
+@media (max-width:560px){ .footer__trust{gap:.5rem 1rem} .footer__trust span:not(:last-child)::after{margin-inline-start:1rem} }

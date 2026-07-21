@@ -79,6 +79,7 @@
       "msg.3":"As this candle dispels the darkness, your smile lights up my heart.",
       "msg.4":"This candle sacrificed itself for this message, but… I love you!",
       "msg.5":"Habibi, your future is glowing.",
+      "gallery.dubai":"From Dubai, with Love.",
       "occname.wedding":"Wedding","occname.birthday":"Birthday","occname.thanks":"Thank You","occname.corporate":"Corporate","occname.newbaby":"New Baby","occname.declaration":"A Declaration","occname.justbecause":"Just Because",
       "toast.pleasechoose":"Please choose","toast.frag":"a fragrance","toast.msgsel":"a secret message","toast.and":"and","toast.complete":"to complete your candle.",
       "toast.opening":"Opening your email — just press send and we'll take it from there ✦"
@@ -154,6 +155,7 @@
       "msg.3":"كما تبدّد هذه الشمعة الظلام، تُضيء ابتسامتك قلبي.",
       "msg.4":"ضحّت هذه الشمعة بنفسها لأجل هذه الرسالة، لكن… أحبّك!",
       "msg.5":"حبيبي، مستقبلك يتوهّج.",
+      "gallery.dubai":"من دبي، مع الحب.",
       "occname.wedding":"زفاف","occname.birthday":"عيد ميلاد","occname.thanks":"شكراً","occname.corporate":"شركات","occname.newbaby":"مولود جديد","occname.declaration":"اعتراف","occname.justbecause":"بلا سبب",
       "toast.pleasechoose":"الرجاء اختيار","toast.frag":"عطراً","toast.msgsel":"رسالة سرّية","toast.and":"و","toast.complete":"لإتمام شمعتك.",
       "toast.opening":"يتم فتح بريدك الإلكتروني — فقط اضغط إرسال وسنتكفّل بالباقي ✦"
@@ -229,6 +231,7 @@
       "msg.3":"Bu mum karanlığı dağıttıkça, gülüşün kalbimi aydınlatıyor.",
       "msg.4":"Bu mum bu mesaj için kendini feda etti ama… seni seviyorum!",
       "msg.5":"Habibi, geleceğin ışıldıyor.",
+      "gallery.dubai":"Dubai'den sevgiyle.",
       "occname.wedding":"Düğün","occname.birthday":"Doğum Günü","occname.thanks":"Teşekkür","occname.corporate":"Kurumsal","occname.newbaby":"Yeni Bebek","occname.declaration":"Bir İtiraf","occname.justbecause":"Sebepsiz",
       "toast.pleasechoose":"Lütfen seç:","toast.frag":"bir koku","toast.msgsel":"bir gizli mesaj","toast.and":"ve","toast.complete":"— mumunu tamamlamak için.",
       "toast.opening":"E-postan açılıyor — sadece gönder'e bas, gerisini biz hallederiz ✦"
@@ -304,6 +307,7 @@
       "msg.3":"Comme cette bougie dissipe l'obscurité, ton sourire illumine mon cœur.",
       "msg.4":"Cette bougie s'est sacrifiée pour ce message, mais… je t'aime !",
       "msg.5":"Habibi, ton avenir rayonne.",
+      "gallery.dubai":"De Dubaï, avec amour.",
       "occname.wedding":"Mariage","occname.birthday":"Anniversaire","occname.thanks":"Merci","occname.corporate":"Entreprise","occname.newbaby":"Naissance","occname.declaration":"Une déclaration","occname.justbecause":"Sans raison",
       "toast.pleasechoose":"Veuillez choisir","toast.frag":"une fragrance","toast.msgsel":"un message secret","toast.and":"et","toast.complete":"pour compléter votre bougie.",
       "toast.opening":"Ouverture de votre e-mail — appuyez sur envoyer et nous nous occupons du reste ✦"
@@ -379,6 +383,7 @@
       "msg.3":"Как эта свеча рассеивает тьму, так твоя улыбка освещает моё сердце.",
       "msg.4":"Эта свеча пожертвовала собой ради этого послания, но… я люблю тебя!",
       "msg.5":"Хабиби, твоё будущее сияет.",
+      "gallery.dubai":"Из Дубая, с любовью.",
       "occname.wedding":"Свадьба","occname.birthday":"День рождения","occname.thanks":"Спасибо","occname.corporate":"Компаниям","occname.newbaby":"Новорождённый","occname.declaration":"Признание","occname.justbecause":"Просто так",
       "toast.pleasechoose":"Пожалуйста, выберите","toast.frag":"аромат","toast.msgsel":"секретное послание","toast.and":"и","toast.complete":"— чтобы завершить свечу.",
       "toast.opening":"Открываем ваше письмо — просто нажмите «отправить», а дальше мы всё сделаем ✦"
@@ -454,6 +459,7 @@
       "msg.3":"जैसे यह मोमबत्ती अँधेरा मिटाती है, तुम्हारी मुस्कान मेरे दिल को रोशन करती है।",
       "msg.4":"इस मोमबत्ती ने इस संदेश के लिए ख़ुद को क़ुर्बान किया, पर… मैं तुमसे प्यार करता हूँ!",
       "msg.5":"हबीबी, तुम्हारा भविष्य दमक रहा है।",
+      "gallery.dubai":"दुबई से, प्यार के साथ।",
       "occname.wedding":"विवाह","occname.birthday":"जन्मदिन","occname.thanks":"धन्यवाद","occname.corporate":"कॉर्पोरेट","occname.newbaby":"नवजात","occname.declaration":"एक इक़रार","occname.justbecause":"यूँ ही",
       "toast.pleasechoose":"कृपया चुनें","toast.frag":"एक सुगंध","toast.msgsel":"एक गुप्त संदेश","toast.and":"और","toast.complete":"अपनी मोमबत्ती पूरी करने के लिए।",
       "toast.opening":"आपका ईमेल खुल रहा है — बस भेजें दबाएँ, आगे हम सँभाल लेंगे ✦"

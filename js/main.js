@@ -301,6 +301,131 @@
     toast(t("toast.opening"));
   });
 
+  /* ============================================================
+     CONVERSATIONAL CONTACT FORM
+     ============================================================ */
+  var chatEl = $("#chat"), chatLog = $("#chatLog"), chatDock = $("#chatDock");
+  var chatStarted = false;
+  var LOGO = "assets/images/logo-seal.png";
+  var contact = { name: "", topic: "", topicId: "", message: "", reach: "" };
+  var TOPIC_EN = { bespoke: "A bespoke candle", bulk: "A corporate / bulk order", question: "A question", hello: "Just saying hello" };
+
+  function chatScroll() { if (chatLog) chatLog.scrollTop = chatLog.scrollHeight; }
+  function clearDock() { if (chatDock) chatDock.innerHTML = ""; }
+
+  function botBubble(text, cb) {
+    var row = document.createElement("div");
+    row.className = "cbub cbub--bot";
+    row.innerHTML = '<span class="cbub__av" aria-hidden="true"><img src="' + LOGO + '" alt=""></span>' +
+      '<div class="cbub__b cbub__typing"><span></span><span></span><span></span></div>';
+    chatLog.appendChild(row); chatScroll();
+    setTimeout(function () {
+      var b = row.querySelector(".cbub__b");
+      b.classList.remove("cbub__typing");
+      b.textContent = text;
+      chatScroll();
+      if (cb) cb();
+    }, 720);
+  }
+  function userBubble(text) {
+    var row = document.createElement("div");
+    row.className = "cbub cbub--user";
+    var b = document.createElement("div"); b.className = "cbub__b"; b.textContent = text;
+    row.appendChild(b); chatLog.appendChild(row); chatScroll();
+  }
+  function askText(ph, onSubmit) {
+    clearDock();
+    var form = document.createElement("form");
+    form.className = "cform";
+    form.innerHTML = '<input type="text" class="cform__in" autocomplete="off">' +
+      '<button type="submit" class="cform__send" aria-label="Send">→</button>';
+    var input = form.querySelector("input");
+    input.setAttribute("placeholder", ph);
+    chatDock.appendChild(form);
+    try { input.focus({ preventScroll: true }); } catch (e) { input.focus(); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = input.value.trim();
+      if (!v) return;
+      userBubble(v); clearDock(); onSubmit(v);
+    });
+  }
+  function askChoices(options, onPick) {
+    clearDock();
+    var wrap = document.createElement("div"); wrap.className = "cchips";
+    options.forEach(function (o) {
+      var btn = document.createElement("button");
+      btn.type = "button"; btn.className = "cchip"; btn.textContent = o.label;
+      btn.addEventListener("click", function () { userBubble(o.label); clearDock(); onPick(o); });
+      wrap.appendChild(btn);
+    });
+    chatDock.appendChild(wrap);
+  }
+  function showSend() {
+    clearDock();
+    var wrap = document.createElement("div"); wrap.className = "csend";
+    var send = document.createElement("button");
+    send.type = "button"; send.className = "btn btn--gold"; send.textContent = t("contact.send");
+    var ig = document.createElement("a");
+    ig.className = "csend__ig"; ig.href = "https://www.instagram.com/lillysecretcandlesdxb";
+    ig.target = "_blank"; ig.rel = "noopener"; ig.textContent = t("contact.igAlt");
+    var restart = document.createElement("button");
+    restart.type = "button"; restart.className = "csend__restart"; restart.textContent = t("contact.restart");
+    send.addEventListener("click", sendContact);
+    restart.addEventListener("click", startChat);
+    wrap.appendChild(send); wrap.appendChild(ig); wrap.appendChild(restart);
+    chatDock.appendChild(wrap);
+  }
+  function sendContact() {
+    var topicEN = TOPIC_EN[contact.topicId] || contact.topic;
+    var lines = [
+      "New message from the Lily's Secret website:",
+      "",
+      "• Name: " + (contact.name || "—"),
+      "• Topic: " + topicEN,
+      "• Message: " + (contact.message || "—"),
+      "• Reach me at: " + (contact.reach || "—"),
+      "",
+      "Sent via the site's contact form."
+    ];
+    var subject = "Website enquiry — " + topicEN + (contact.name ? " · " + contact.name : "");
+    window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+    toast(t("toast.opening"));
+  }
+  function startChat() {
+    if (!chatLog) return;
+    contact = { name: "", topic: "", topicId: "", message: "", reach: "" };
+    chatLog.innerHTML = ""; clearDock();
+    botBubble(t("contact.greet"), function () {
+      askText(t("contact.namePh"), function (name) {
+        contact.name = name;
+        botBubble(t("contact.q_help").replace("{name}", name), function () {
+          askChoices([
+            { id: "bespoke", label: t("contact.opt_bespoke") },
+            { id: "bulk", label: t("contact.opt_bulk") },
+            { id: "question", label: t("contact.opt_question") },
+            { id: "hello", label: t("contact.opt_hello") }
+          ], function (o) {
+            contact.topicId = o.id; contact.topic = o.label;
+            botBubble(t("contact.q_detail"), function () {
+              askText(t("contact.detailPh"), function (msg) {
+                contact.message = msg;
+                botBubble(t("contact.q_contact"), function () {
+                  askText(t("contact.contactPh"), function (reach) {
+                    contact.reach = reach;
+                    botBubble(t("contact.q_ready").replace("{name}", contact.name), function () {
+                      showSend();
+                    });
+                  });
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  }
+
   /* ---------- Full render + re-render on language change ---------- */
   function renderAll() {
     renderFragGrid();
@@ -313,9 +438,22 @@
     if (candleLit) secretMsg.textContent = t("msg." + candleIdx);
     if (lightBtn) lightBtn.textContent = candleLit ? t("secret.blowout") : t("secret.light");
     if (hint) hint.textContent = candleLit ? t("secret.hint2") : t("secret.hint");
+    if (chatStarted) startChat();   // re-localize the conversation
     bindReveal();
   }
   renderAll();
   document.addEventListener("ls:langchange", renderAll);
+
+  /* Start the conversation when the contact section scrolls into view */
+  if (chatEl && "IntersectionObserver" in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !chatStarted) { chatStarted = true; startChat(); cio.disconnect(); }
+      });
+    }, { threshold: 0.3 });
+    cio.observe(chatEl);
+  } else if (chatEl) {
+    chatStarted = true; startChat();
+  }
 
 })();

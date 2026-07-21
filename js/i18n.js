@@ -11,6 +11,18 @@
   var DICT = {
     /* ---------------- ENGLISH ---------------- */
     en: {
+      "nav.contact":"Contact",
+      "contact.eyebrow":"Say Hello","contact.title":"Let's talk",
+      "contact.sub":"Prefer to just chat? Tell us what you have in mind — a few quick questions and it lands in our studio inbox. We always reply personally.",
+      "contact.greet":"Hello ⚜ I'm here on behalf of Lily's Secret. May I ask your name?",
+      "contact.namePh":"Type your name…",
+      "contact.q_help":"Lovely to meet you, {name}. What can we help you with?",
+      "contact.opt_bespoke":"A bespoke candle","contact.opt_bulk":"A corporate / bulk order","contact.opt_question":"A question","contact.opt_hello":"Just saying hello",
+      "contact.q_detail":"Wonderful. Tell me a little more — what do you have in mind?","contact.detailPh":"Your message…",
+      "contact.q_contact":"Perfect. How can we reach you?","contact.contactPh":"Email or phone / WhatsApp",
+      "contact.q_ready":"Thank you, {name} ⚜ Shall I send this to our studio?",
+      "contact.send":"Send my message →","contact.restart":"Start over","contact.igAlt":"or message us on Instagram",
+      "contact.fine":"This opens a pre-filled email to our studio — no details are stored on this site.",
       "nav.secret":"The Secret","nav.fragrances":"Fragrances","nav.how":"How It Works","nav.craft":"Craft","nav.occasions":"Occasions",
       "cta.create":"Create Your Candle",
       "ribbon.text":"Launch offer — <strong>10% off</strong> your first candle, with a hidden surprise inside","ribbon.link":"Claim it",
@@ -87,6 +99,18 @@
 
     /* ---------------- ARABIC (RTL) ---------------- */
     ar: {
+      "nav.contact":"تواصل",
+      "contact.eyebrow":"مرحباً","contact.title":"لنتحدّث",
+      "contact.sub":"تفضّل الدردشة؟ أخبرنا بما يدور في ذهنك — بضعة أسئلة سريعة وتصل رسالتك إلى استوديونا. نردّ عليك دائماً بأنفسنا.",
+      "contact.greet":"مرحباً ⚜ أنا هنا نيابةً عن «ليليز سيكريت». ما اسمك؟",
+      "contact.namePh":"اكتب اسمك…",
+      "contact.q_help":"سعِدنا بلقائك يا {name}. كيف يمكننا مساعدتك؟",
+      "contact.opt_bespoke":"شمعة مخصّصة","contact.opt_bulk":"طلب شركات / بالجملة","contact.opt_question":"سؤال","contact.opt_hello":"مجرّد إلقاء التحية",
+      "contact.q_detail":"رائع. أخبرني المزيد — ما الذي يدور في ذهنك؟","contact.detailPh":"رسالتك…",
+      "contact.q_contact":"ممتاز. كيف نصل إليك؟","contact.contactPh":"بريد إلكتروني أو هاتف / واتساب",
+      "contact.q_ready":"شكراً لك يا {name} ⚜ هل أرسل هذا إلى استوديونا؟",
+      "contact.send":"أرسل رسالتي →","contact.restart":"ابدأ من جديد","contact.igAlt":"أو راسلنا على إنستغرام",
+      "contact.fine":"هذا يفتح بريداً إلكترونياً معبّأً مسبقاً إلى استوديونا — لا تُحفظ أي بيانات على هذا الموقع.",
       "nav.secret":"السرّ","nav.fragrances":"العطور","nav.how":"كيف نصنعها","nav.craft":"الحرفة","nav.occasions":"المناسبات",
       "cta.create":"اصنع شمعتك",
       "ribbon.text":"عرض الإطلاق — <strong>خصم 10%</strong> على شمعتك الأولى، مع مفاجأة مخبّأة في الداخل","ribbon.link":"احصل عليه",
@@ -163,6 +187,18 @@
 
     /* ---------------- TURKISH ---------------- */
     tr: {
+      "nav.contact":"İletişim",
+      "contact.eyebrow":"Merhaba","contact.title":"Hadi konuşalım",
+      "contact.sub":"Sohbet etmeyi mi tercih edersiniz? Aklınızdakini anlatın — birkaç kısa soru ve mesajınız stüdyomuza ulaşsın. Her zaman bizzat yanıtlıyoruz.",
+      "contact.greet":"Merhaba ⚜ Lily's Secret adına buradayım. Adınızı öğrenebilir miyim?",
+      "contact.namePh":"Adınızı yazın…",
+      "contact.q_help":"Tanıştığımıza sevindim, {name}. Size nasıl yardımcı olabiliriz?",
+      "contact.opt_bespoke":"Kişiye özel bir mum","contact.opt_bulk":"Kurumsal / toplu sipariş","contact.opt_question":"Bir soru","contact.opt_hello":"Sadece merhaba demek",
+      "contact.q_detail":"Harika. Biraz daha anlatın — aklınızda ne var?","contact.detailPh":"Mesajınız…",
+      "contact.q_contact":"Mükemmel. Size nasıl ulaşabiliriz?","contact.contactPh":"E-posta veya telefon / WhatsApp",
+      "contact.q_ready":"Teşekkürler, {name} ⚜ Bunu stüdyomuza göndereyim mi?",
+      "contact.send":"Mesajımı gönder →","contact.restart":"Baştan başla","contact.igAlt":"veya Instagram'dan yazın",
+      "contact.fine":"Bu, stüdyomuza önceden doldurulmuş bir e-posta açar — bu sitede hiçbir bilgi saklanmaz.",
       "nav.secret":"Sır","nav.fragrances":"Kokular","nav.how":"Nasıl Çalışır","nav.craft":"Zanaat","nav.occasions":"Anlar",
       "cta.create":"Mumunu Yarat",
       "ribbon.text":"Lansman fırsatı — ilk mumunda <strong>%10 indirim</strong> ve içinde gizli bir sürpriz","ribbon.link":"Fırsatı yakala",
@@ -239,6 +275,18 @@
 
     /* ---------------- FRENCH ---------------- */
     fr: {
+      "nav.contact":"Contact",
+      "contact.eyebrow":"Bonjour","contact.title":"Parlons-en",
+      "contact.sub":"Vous préférez discuter ? Dites-nous ce que vous avez en tête — quelques questions rapides et votre message arrive dans notre atelier. Nous répondons toujours personnellement.",
+      "contact.greet":"Bonjour ⚜ Je suis là de la part de Lily's Secret. Puis-je vous demander votre nom ?",
+      "contact.namePh":"Écrivez votre nom…",
+      "contact.q_help":"Ravie de vous rencontrer, {name}. Comment pouvons-nous vous aider ?",
+      "contact.opt_bespoke":"Une bougie sur mesure","contact.opt_bulk":"Une commande entreprise / en gros","contact.opt_question":"Une question","contact.opt_hello":"Juste dire bonjour",
+      "contact.q_detail":"Merveilleux. Dites-m'en un peu plus — qu'avez-vous en tête ?","contact.detailPh":"Votre message…",
+      "contact.q_contact":"Parfait. Comment pouvons-nous vous joindre ?","contact.contactPh":"E-mail ou téléphone / WhatsApp",
+      "contact.q_ready":"Merci, {name} ⚜ Dois-je envoyer ceci à notre atelier ?",
+      "contact.send":"Envoyer mon message →","contact.restart":"Recommencer","contact.igAlt":"ou écrivez-nous sur Instagram",
+      "contact.fine":"Ceci ouvre un e-mail pré-rempli vers notre atelier — aucune donnée n'est stockée sur ce site.",
       "nav.secret":"Le Secret","nav.fragrances":"Fragrances","nav.how":"Comment ça marche","nav.craft":"Savoir-faire","nav.occasions":"Occasions",
       "cta.create":"Créez votre bougie",
       "ribbon.text":"Offre de lancement — <strong>-10 %</strong> sur votre première bougie, avec une surprise cachée à l'intérieur","ribbon.link":"J'en profite",
@@ -315,6 +363,18 @@
 
     /* ---------------- RUSSIAN ---------------- */
     ru: {
+      "nav.contact":"Контакт",
+      "contact.eyebrow":"Здравствуйте","contact.title":"Давайте поговорим",
+      "contact.sub":"Предпочитаете просто написать? Расскажите, что у вас на уме — несколько быстрых вопросов, и сообщение придёт в нашу студию. Мы всегда отвечаем лично.",
+      "contact.greet":"Здравствуйте ⚜ Я здесь от имени Lily's Secret. Как вас зовут?",
+      "contact.namePh":"Введите ваше имя…",
+      "contact.q_help":"Приятно познакомиться, {name}. Чем мы можем помочь?",
+      "contact.opt_bespoke":"Индивидуальная свеча","contact.opt_bulk":"Корпоративный / оптовый заказ","contact.opt_question":"Вопрос","contact.opt_hello":"Просто поздороваться",
+      "contact.q_detail":"Замечательно. Расскажите подробнее — что вы задумали?","contact.detailPh":"Ваше сообщение…",
+      "contact.q_contact":"Отлично. Как с вами связаться?","contact.contactPh":"E-mail или телефон / WhatsApp",
+      "contact.q_ready":"Спасибо, {name} ⚜ Отправить это в нашу студию?",
+      "contact.send":"Отправить сообщение →","contact.restart":"Начать заново","contact.igAlt":"или напишите нам в Instagram",
+      "contact.fine":"Откроется заполненное письмо в нашу студию — на сайте никакие данные не сохраняются.",
       "nav.secret":"Секрет","nav.fragrances":"Ароматы","nav.how":"Как это работает","nav.craft":"Ремесло","nav.occasions":"Поводы",
       "cta.create":"Создать свечу",
       "ribbon.text":"Запуск — <strong>-10 %</strong> на первую свечу и скрытый сюрприз внутри","ribbon.link":"Забрать",
@@ -391,6 +451,18 @@
 
     /* ---------------- HINDI ---------------- */
     hi: {
+      "nav.contact":"संपर्क",
+      "contact.eyebrow":"नमस्ते","contact.title":"आइए बात करें",
+      "contact.sub":"बस बातचीत करना चाहेंगे? हमें बताएँ आपके मन में क्या है — कुछ छोटे सवाल और आपका संदेश हमारे स्टूडियो पहुँच जाएगा। हम हमेशा व्यक्तिगत रूप से उत्तर देते हैं।",
+      "contact.greet":"नमस्ते ⚜ मैं Lily's Secret की ओर से यहाँ हूँ। आपका नाम क्या है?",
+      "contact.namePh":"अपना नाम लिखें…",
+      "contact.q_help":"आपसे मिलकर खुशी हुई, {name}। हम आपकी किस प्रकार मदद करें?",
+      "contact.opt_bespoke":"एक वैयक्तिक मोमबत्ती","contact.opt_bulk":"कॉर्पोरेट / थोक ऑर्डर","contact.opt_question":"एक सवाल","contact.opt_hello":"बस नमस्ते कहना",
+      "contact.q_detail":"बढ़िया। थोड़ा और बताएँ — आपके मन में क्या है?","contact.detailPh":"आपका संदेश…",
+      "contact.q_contact":"बिल्कुल सही। हम आप तक कैसे पहुँचें?","contact.contactPh":"ईमेल या फ़ोन / WhatsApp",
+      "contact.q_ready":"धन्यवाद, {name} ⚜ क्या मैं इसे हमारे स्टूडियो भेज दूँ?",
+      "contact.send":"मेरा संदेश भेजें →","contact.restart":"फिर से शुरू करें","contact.igAlt":"या हमें Instagram पर संदेश करें",
+      "contact.fine":"यह हमारे स्टूडियो को एक पहले से भरा ईमेल खोलता है — इस साइट पर कोई जानकारी संग्रहीत नहीं होती।",
       "nav.secret":"राज़","nav.fragrances":"सुगंध","nav.how":"यह कैसे काम करता है","nav.craft":"कारीगरी","nav.occasions":"अवसर",
       "cta.create":"अपनी मोमबत्ती बनाएँ",
       "ribbon.text":"लॉन्च ऑफ़र — आपकी पहली मोमबत्ती पर <strong>10% छूट</strong>, अंदर एक छुपा सरप्राइज़","ribbon.link":"पाएँ",

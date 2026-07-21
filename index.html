@@ -149,21 +149,26 @@
     </header>
 
     <div class="reveal-lab reveal">
-      <div class="candle" id="candle" role="img" aria-label="Interactive candle that burns down to reveal a hidden message">
-        <div class="candle__flame" id="flame" aria-hidden="true"><span></span></div>
-        <div class="candle__glass">
-          <div class="candle__wax" id="wax"></div>
-          <div class="candle__disc" id="disc">
-            <span class="candle__fleur" aria-hidden="true">⚜</span>
-            <p class="candle__message" id="secretMsg">Your message, hidden here.</p>
-            <span class="candle__fleur" aria-hidden="true">⚜</span>
+      <div class="candle" id="candle" role="img" aria-label="Interactive candle that reveals a hidden message when lit">
+        <div class="candle__glow" aria-hidden="true"></div>
+        <div class="candle__jar">
+          <div class="candle__inner">
+            <div class="candle__wax"><div class="candle__pool" aria-hidden="true"></div></div>
+            <div class="candle__label" aria-hidden="true">
+              <span class="candle__label-brand">LILY'S SECRET</span>
+              <span class="candle__label-line" data-i18n-html="candle.label">Patience brings the light<br>the flame reveals the secret</span>
+            </div>
+            <div class="candle__msg" id="disc">
+              <span class="candle__fleur" aria-hidden="true">⚜</span>
+              <p class="candle__message" id="secretMsg">Your message, hidden here.</p>
+              <span class="candle__fleur" aria-hidden="true">⚜</span>
+            </div>
           </div>
-          <div class="candle__label" aria-hidden="true">
-            <span class="candle__label-brand">LILY'S SECRET</span>
-            <span class="candle__label-line" data-i18n="candle.label">Patience brings the light<br />the flame reveals the secret</span>
-          </div>
+          <div class="candle__wick" aria-hidden="true"></div>
+          <div class="candle__flame" id="flame" aria-hidden="true"><i></i></div>
+          <div class="candle__rim" aria-hidden="true"></div>
+          <div class="candle__gloss" aria-hidden="true"></div>
         </div>
-        <div class="candle__base"></div>
       </div>
 
       <div class="reveal-lab__side">

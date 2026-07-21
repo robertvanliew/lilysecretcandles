@@ -11,6 +11,14 @@
   var DICT = {
     /* ---------------- ENGLISH ---------------- */
     en: {
+      "share.label":"Share","share.copied":"Link copied ✓",
+      "share.text":"Bespoke candles with a secret message hidden in the wax — handmade in Dubai.",
+      "faq.eyebrow":"Questions","faq.title":"Frequently asked",
+      "faq.q1":"What is Lily's Secret?","faq.a1":"We're a Dubai maker of bespoke, hand-poured candles. Each one hides a secret personal message at the bottom of the glass, revealed only as the flame burns down.",
+      "faq.q2":"How does the secret message work?","faq.a2":"You choose a fragrance and write your message. We hand-set it at the bottom of the glass before the final pour, so it stays hidden in the wax and is revealed as the candle burns down.",
+      "faq.q3":"How do I place an order?","faq.a3":"Use the \u2018Create Your Candle\u2019 builder, then tap \u2018Send my order\u2019 or \u2018Order on WhatsApp\u2019. No payment is taken online \u2014 we confirm every bespoke order with you personally.",
+      "faq.q4":"Can I return or change a candle?","faq.a4":"As each candle is personalised, it can't be returned once production begins. If anything arrives damaged or incorrect we'll put it right \u2014 see our Returns page.",
+      "faq.q5":"Where are the candles made, and do you deliver?","faq.a5":"Every candle is handmade to order in Dubai. We deliver across the UAE, with collection available in Dubai.",
       "summary.wa":"Order on WhatsApp",
       "wa.prefill":"Hello Lily's Secret! I'd like to ask about a candle.","wa.aria":"Chat with us on WhatsApp",
       "footer.terms":"Terms","footer.privacy":"Privacy","footer.returns":"Returns",
@@ -105,6 +113,14 @@
 
     /* ---------------- ARABIC (RTL) ---------------- */
     ar: {
+      "share.label":"مشاركة","share.copied":"تم نسخ الرابط ✓",
+      "share.text":"شموع مخصّصة برسالة سرّية مخبّأة في الشمع — صناعة يدوية في دبي.",
+      "faq.eyebrow":"أسئلة","faq.title":"الأسئلة الشائعة",
+      "faq.q1":"ما هي ليليز سيكريت؟","faq.a1":"نحن صانعو شموع مخصّصة مصبوبة يدوياً في دبي. كل شمعة تخفي رسالة شخصية سرّية في قاع الكوب، تُكشف فقط عندما يحترق اللهب حتى النهاية.",
+      "faq.q2":"كيف تعمل الرسالة السرّية؟","faq.a2":"تختار عطراً وتكتب رسالتك. نضعها يدوياً في قاع الكوب قبل الصبّة الأخيرة، فتبقى مخبّأة في الشمع وتُكشف مع احتراق الشمعة.",
+      "faq.q3":"كيف أضع طلباً؟","faq.a3":"استخدم أداة «اصنع شمعتك»، ثم اضغط «أرسل طلبي» أو «اطلب عبر واتساب». لا يتم الدفع عبر الإنترنت — نؤكّد كل طلب خاص معك شخصياً.",
+      "faq.q4":"هل يمكنني إرجاع الشمعة أو تغييرها؟","faq.a4":"بما أن كل شمعة مخصّصة، لا يمكن إرجاعها بعد بدء الإنتاج. وإذا وصل أي شيء تالفاً أو غير صحيح فسنعالج الأمر — راجع صفحة الإرجاع.",
+      "faq.q5":"أين تُصنع الشموع، وهل توصّلون؟","faq.a5":"كل شمعة تُصنع يدوياً حسب الطلب في دبي. نوصّل إلى جميع أنحاء الإمارات، مع إمكانية الاستلام في دبي.",
       "summary.wa":"اطلب عبر واتساب",
       "wa.prefill":"مرحباً ليليز سيكريت! أودّ الاستفسار عن شمعة.","wa.aria":"تحدّث معنا على واتساب",
       "footer.terms":"الشروط","footer.privacy":"الخصوصية","footer.returns":"الإرجاع",
@@ -199,6 +215,14 @@
 
     /* ---------------- TURKISH ---------------- */
     tr: {
+      "share.label":"Paylaş","share.copied":"Bağlantı kopyalandı ✓",
+      "share.text":"Balmumunda gizli bir mesaj taşıyan kişiye özel mumlar — Dubai'de el yapımı.",
+      "faq.eyebrow":"Sorular","faq.title":"Sık sorulanlar",
+      "faq.q1":"Lily's Secret nedir?","faq.a1":"Dubai'de kişiye özel, elde dökülen mumlar üretiyoruz. Her mum, camın dibinde gizli kişisel bir mesaj saklar ve bu mesaj ancak alev sonuna dek yandığında ortaya çıkar.",
+      "faq.q2":"Gizli mesaj nasıl çalışır?","faq.a2":"Bir koku seçer ve mesajınızı yazarsınız. Son dökümden önce camın dibine elle yerleştiririz; böylece balmumunda gizli kalır ve mum yandıkça ortaya çıkar.",
+      "faq.q3":"Nasıl sipariş veririm?","faq.a3":"\u2018Mumunu Yarat\u2019 aracını kullanın, ardından \u2018Siparişimi gönder\u2019 ya da \u2018WhatsApp'tan sipariş ver\u2019e dokunun. Çevrimiçi ödeme alınmaz \u2014 her özel siparişi sizinle bizzat onaylarız.",
+      "faq.q4":"Bir mumu iade edebilir veya değiştirebilir miyim?","faq.a4":"Her mum kişiye özel olduğundan, üretim başladıktan sonra iade edilemez. Bir şey hasarlı ya da yanlış gelirse düzeltiriz \u2014 İadeler sayfamıza bakın.",
+      "faq.q5":"Mumlar nerede yapılıyor ve teslimat yapıyor musunuz?","faq.a5":"Her mum Dubai'de siparişe özel el yapımıdır. BAE genelinde teslimat yaparız; Dubai'de teslim alma seçeneği vardır.",
       "summary.wa":"WhatsApp'tan sipariş ver",
       "wa.prefill":"Merhaba Lily's Secret! Bir mum hakkında soru sormak istiyorum.","wa.aria":"WhatsApp'tan bize yazın",
       "footer.terms":"Koşullar","footer.privacy":"Gizlilik","footer.returns":"İadeler",
@@ -293,6 +317,14 @@
 
     /* ---------------- FRENCH ---------------- */
     fr: {
+      "share.label":"Partager","share.copied":"Lien copié ✓",
+      "share.text":"Des bougies sur mesure avec un message secret caché dans la cire — faites main à Dubaï.",
+      "faq.eyebrow":"Questions","faq.title":"Questions fréquentes",
+      "faq.q1":"Qu'est-ce que Lily's Secret ?","faq.a1":"Nous créons à Dubaï des bougies sur mesure, coulées à la main. Chacune cache un message personnel secret au fond du verre, révélé seulement lorsque la flamme a tout consumé.",
+      "faq.q2":"Comment fonctionne le message secret ?","faq.a2":"Vous choisissez une fragrance et écrivez votre message. Nous le plaçons à la main au fond du verre avant la coulée finale ; il reste caché dans la cire et se révèle à mesure que la bougie brûle.",
+      "faq.q3":"Comment passer commande ?","faq.a3":"Utilisez le module \u2018Créez votre bougie\u2019, puis touchez \u2018Envoyer ma commande\u2019 ou \u2018Commander sur WhatsApp\u2019. Aucun paiement en ligne \u2014 nous confirmons chaque commande sur mesure avec vous personnellement.",
+      "faq.q4":"Puis-je retourner ou modifier une bougie ?","faq.a4":"Chaque bougie étant personnalisée, elle ne peut être retournée une fois la production commencée. Si un article arrive endommagé ou incorrect, nous y remédions \u2014 voir notre page Retours.",
+      "faq.q5":"Où sont fabriquées les bougies, et livrez-vous ?","faq.a5":"Chaque bougie est faite main sur commande à Dubaï. Nous livrons dans tous les Émirats, avec retrait possible à Dubaï.",
       "summary.wa":"Commander sur WhatsApp",
       "wa.prefill":"Bonjour Lily's Secret ! J'aimerais me renseigner sur une bougie.","wa.aria":"Discutez avec nous sur WhatsApp",
       "footer.terms":"Conditions","footer.privacy":"Confidentialité","footer.returns":"Retours",
@@ -387,6 +419,14 @@
 
     /* ---------------- RUSSIAN ---------------- */
     ru: {
+      "share.label":"Поделиться","share.copied":"Ссылка скопирована ✓",
+      "share.text":"Персональные свечи с секретным посланием, спрятанным в воске — ручная работа из Дубая.",
+      "faq.eyebrow":"Вопросы","faq.title":"Частые вопросы",
+      "faq.q1":"Что такое Lily's Secret?","faq.a1":"Мы делаем в Дубае индивидуальные свечи ручной заливки. Каждая прячет секретное личное послание на дне стакана, которое открывается лишь когда пламя прогорит до конца.",
+      "faq.q2":"Как работает секретное послание?","faq.a2":"Вы выбираете аромат и пишете своё послание. Мы вручную размещаем его на дне стакана перед финальной заливкой, поэтому оно спрятано в воске и открывается по мере горения свечи.",
+      "faq.q3":"Как сделать заказ?","faq.a3":"Воспользуйтесь конструктором \u2018Создайте свою свечу\u2019, затем нажмите \u2018Отправить заказ\u2019 или \u2018Заказать в WhatsApp\u2019. Оплата онлайн не взимается \u2014 каждый индивидуальный заказ мы подтверждаем лично.",
+      "faq.q4":"Можно ли вернуть или изменить свечу?","faq.a4":"Поскольку каждая свеча персональная, её нельзя вернуть после начала производства. Если что-то придёт повреждённым или неверным — мы всё исправим (см. страницу Возврата).",
+      "faq.q5":"Где делают свечи и есть ли доставка?","faq.a5":"Каждая свеча делается на заказ вручную в Дубае. Мы доставляем по всем ОАЭ, самовывоз доступен в Дубае.",
       "summary.wa":"Заказать в WhatsApp",
       "wa.prefill":"Здравствуйте, Lily's Secret! Хочу узнать о свече.","wa.aria":"Напишите нам в WhatsApp",
       "footer.terms":"Условия","footer.privacy":"Конфиденциальность","footer.returns":"Возврат",
@@ -481,6 +521,14 @@
 
     /* ---------------- HINDI ---------------- */
     hi: {
+      "share.label":"साझा करें","share.copied":"लिंक कॉपी हो गया ✓",
+      "share.text":"मोम में छिपे गुप्त संदेश वाली वैयक्तिक मोमबत्तियाँ — दुबई में हस्तनिर्मित।",
+      "faq.eyebrow":"सवाल","faq.title":"अक्सर पूछे जाने वाले सवाल",
+      "faq.q1":"Lily's Secret क्या है?","faq.a1":"हम दुबई में हाथ से ढाली गई वैयक्तिक मोमबत्तियाँ बनाते हैं। हर मोमबत्ती काँच की तली में एक गुप्त निजी संदेश छिपाती है, जो तभी उजागर होता है जब लौ पूरी तरह जल जाती है।",
+      "faq.q2":"गुप्त संदेश कैसे काम करता है?","faq.a2":"आप एक सुगंध चुनते हैं और अपना संदेश लिखते हैं। हम इसे अंतिम ढलाई से पहले काँच की तली में हाथ से रखते हैं, ताकि यह मोम में छिपा रहे और मोमबत्ती के जलने पर उजागर हो।",
+      "faq.q3":"मैं ऑर्डर कैसे करूँ?","faq.a3":"\u2018अपनी मोमबत्ती बनाएँ\u2019 टूल का उपयोग करें, फिर \u2018मेरा ऑर्डर भेजें\u2019 या \u2018WhatsApp पर ऑर्डर करें\u2019 दबाएँ। ऑनलाइन कोई भुगतान नहीं \u2014 हर विशेष ऑर्डर की पुष्टि हम आपके साथ व्यक्तिगत रूप से करते हैं।",
+      "faq.q4":"क्या मैं मोमबत्ती वापस या बदल सकता/सकती हूँ?","faq.a4":"चूँकि हर मोमबत्ती वैयक्तिक है, उत्पादन शुरू होने के बाद इसे वापस नहीं किया जा सकता। यदि कुछ क्षतिग्रस्त या गलत आता है तो हम उसे ठीक करेंगे \u2014 हमारा वापसी पेज देखें।",
+      "faq.q5":"मोमबत्तियाँ कहाँ बनती हैं, और क्या आप डिलीवरी करते हैं?","faq.a5":"हर मोमबत्ती दुबई में ऑर्डर पर हस्तनिर्मित होती है। हम पूरे यूएई में डिलीवरी करते हैं, दुबई में पिकअप उपलब्ध है।",
       "summary.wa":"WhatsApp पर ऑर्डर करें",
       "wa.prefill":"नमस्ते Lily's Secret! मैं एक मोमबत्ती के बारे में पूछना चाहता/चाहती हूँ।","wa.aria":"WhatsApp पर हमसे बात करें",
       "footer.terms":"शर्तें","footer.privacy":"गोपनीयता","footer.returns":"वापसी",

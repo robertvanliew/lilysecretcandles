@@ -62,6 +62,18 @@
   }
   initWhatsApp();
 
+  /* ---------- Share (native share sheet → iMessage/WhatsApp/etc., clipboard fallback) ---------- */
+  var shareBtn = $("#shareBtn");
+  if (shareBtn) shareBtn.addEventListener("click", function () {
+    var url = "https://www.lilysecretcandles.com/";
+    var data = { title: "Lily's Secret", text: t("share.text"), url: url };
+    if (navigator.share) {
+      navigator.share(data).catch(function () {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function () { toast(t("share.copied")); }, function () { toast(url); });
+    } else { toast(url); }
+  });
+
   /* ---------- Year ---------- */
   var yr = $("#yr"); if (yr) yr.textContent = new Date().getFullYear();
 

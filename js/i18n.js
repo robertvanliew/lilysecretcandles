@@ -11,6 +11,9 @@
   var DICT = {
     /* ---------------- ENGLISH ---------------- */
     en: {
+      "form.sending":"Sending…",
+      "form.sent":"Sent ⚜ Thank you — we'll be in touch very soon.",
+      "form.error":"Hmm, that didn't go through. Please try Instagram, or email us directly.",
       "nav.contact":"Contact",
       "contact.eyebrow":"Say Hello","contact.title":"Let's talk",
       "contact.sub":"Prefer to just chat? Tell us what you have in mind — a few quick questions and it lands in our studio inbox. We always reply personally.",
@@ -99,6 +102,9 @@
 
     /* ---------------- ARABIC (RTL) ---------------- */
     ar: {
+      "form.sending":"جارٍ الإرسال…",
+      "form.sent":"تم الإرسال ⚜ شكراً لك — سنتواصل معك قريباً جداً.",
+      "form.error":"لم يتم الإرسال. جرّب إنستغرام أو راسلنا مباشرة.",
       "nav.contact":"تواصل",
       "contact.eyebrow":"مرحباً","contact.title":"لنتحدّث",
       "contact.sub":"تفضّل الدردشة؟ أخبرنا بما يدور في ذهنك — بضعة أسئلة سريعة وتصل رسالتك إلى استوديونا. نردّ عليك دائماً بأنفسنا.",
@@ -187,6 +193,9 @@
 
     /* ---------------- TURKISH ---------------- */
     tr: {
+      "form.sending":"Gönderiliyor…",
+      "form.sent":"Gönderildi ⚜ Teşekkürler — çok yakında size döneceğiz.",
+      "form.error":"Gönderilemedi. Lütfen Instagram'ı deneyin ya da bize doğrudan e-posta atın.",
       "nav.contact":"İletişim",
       "contact.eyebrow":"Merhaba","contact.title":"Hadi konuşalım",
       "contact.sub":"Sohbet etmeyi mi tercih edersiniz? Aklınızdakini anlatın — birkaç kısa soru ve mesajınız stüdyomuza ulaşsın. Her zaman bizzat yanıtlıyoruz.",
@@ -275,6 +284,9 @@
 
     /* ---------------- FRENCH ---------------- */
     fr: {
+      "form.sending":"Envoi…",
+      "form.sent":"Envoyé ⚜ Merci — nous vous répondrons très vite.",
+      "form.error":"L'envoi a échoué. Essayez Instagram ou écrivez-nous directement.",
       "nav.contact":"Contact",
       "contact.eyebrow":"Bonjour","contact.title":"Parlons-en",
       "contact.sub":"Vous préférez discuter ? Dites-nous ce que vous avez en tête — quelques questions rapides et votre message arrive dans notre atelier. Nous répondons toujours personnellement.",
@@ -363,6 +375,9 @@
 
     /* ---------------- RUSSIAN ---------------- */
     ru: {
+      "form.sending":"Отправка…",
+      "form.sent":"Отправлено ⚜ Спасибо — мы скоро свяжемся с вами.",
+      "form.error":"Не удалось отправить. Напишите нам в Instagram или на почту.",
       "nav.contact":"Контакт",
       "contact.eyebrow":"Здравствуйте","contact.title":"Давайте поговорим",
       "contact.sub":"Предпочитаете просто написать? Расскажите, что у вас на уме — несколько быстрых вопросов, и сообщение придёт в нашу студию. Мы всегда отвечаем лично.",
@@ -451,6 +466,9 @@
 
     /* ---------------- HINDI ---------------- */
     hi: {
+      "form.sending":"भेजा जा रहा है…",
+      "form.sent":"भेज दिया ⚜ धन्यवाद — हम जल्द ही संपर्क करेंगे।",
+      "form.error":"भेजना विफल रहा। कृपया Instagram आज़माएँ या हमें सीधे ईमेल करें।",
       "nav.contact":"संपर्क",
       "contact.eyebrow":"नमस्ते","contact.title":"आइए बात करें",
       "contact.sub":"बस बातचीत करना चाहेंगे? हमें बताएँ आपके मन में क्या है — कुछ छोटे सवाल और आपका संदेश हमारे स्टूडियो पहुँच जाएगा। हम हमेशा व्यक्तिगत रूप से उत्तर देते हैं।",

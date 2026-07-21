@@ -261,8 +261,39 @@
     toast._t = setTimeout(function () { toastEl.classList.remove("show"); }, 4600);
   }
 
-  /* ---------- Submit → pre-filled email (ALWAYS in English for the studio) ---------- */
+  /* ---------- Submit (ALWAYS in English for the studio) ---------- */
   var EMAIL = "Bsraulaas6@gmail.com";
+
+  // ── Direct-to-inbox delivery ────────────────────────────────────────────
+  // Paste a Web3Forms access key here (free — get one at https://web3forms.com,
+  // tied to the studio's email address) to send every submission STRAIGHT to
+  // the inbox, with no email app opening for the customer.
+  // Leave it "" and the site falls back to opening a pre-filled email.
+  var FORM_ACCESS_KEY = "";
+
+  // Delivers {subject, message} to the studio.
+  // onDone(true) = sent to inbox · false = failed · null = used mailto fallback.
+  function submitToStudio(subject, message, fromName, replyTo, onDone) {
+    if (FORM_ACCESS_KEY) {
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          access_key: FORM_ACCESS_KEY,
+          subject: subject,
+          from_name: fromName || "Lily's Secret website",
+          replyto: replyTo || "",
+          message: message
+        })
+      }).then(function (r) { return r.json(); })
+        .then(function (d) { onDone(d && d.success ? true : false); })
+        .catch(function () { onDone(false); });
+    } else {
+      window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+      onDone(null);
+    }
+  }
+
   function messageEN() {
     if (sel.msgCustom) return sel.msgCustom;
     if (sel.msgIndex >= 0) return I18N.en("msg." + sel.msgIndex);
@@ -297,8 +328,12 @@
       "Please confirm availability and the final details. Thank you!"
     ];
     var subject = "Bespoke candle order — " + sel.frag + (sel.occ ? " · " + occEN : "");
-    window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-    toast(t("toast.opening"));
+    toast(t("form.sending"));
+    submitToStudio(subject, lines.join("\n"), sel.name, sel.contact, function (ok) {
+      if (ok === false) toast(t("form.error"));
+      else if (ok === true) toast(t("form.sent"));
+      else toast(t("toast.opening"));
+    });
   });
 
   /* ============================================================
@@ -389,8 +424,28 @@
       "Sent via the site's contact form."
     ];
     var subject = "Website enquiry — " + topicEN + (contact.name ? " · " + contact.name : "");
-    window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-    toast(t("toast.opening"));
+    clearDock();
+    var pending = document.createElement("div");
+    pending.className = "cbub cbub--bot";
+    pending.innerHTML = '<span class="cbub__av" aria-hidden="true"><img src="' + LOGO + '" alt=""></span>' +
+      '<div class="cbub__b cbub__typing"><span></span><span></span><span></span></div>';
+    chatLog.appendChild(pending); chatScroll();
+    submitToStudio(subject, lines.join("\n"), contact.name, contact.reach, function (ok) {
+      pending.remove();
+      if (ok === false) { toast(t("form.error")); showSend(); return; }
+      botBubble(ok === true ? t("form.sent") : t("toast.opening"), function () {
+        clearDock();
+        var wrap = document.createElement("div"); wrap.className = "csend";
+        var ig = document.createElement("a");
+        ig.className = "csend__ig"; ig.href = "https://www.instagram.com/lillysecretcandlesdxb";
+        ig.target = "_blank"; ig.rel = "noopener"; ig.textContent = t("contact.igAlt");
+        var restart = document.createElement("button");
+        restart.type = "button"; restart.className = "csend__restart"; restart.textContent = t("contact.restart");
+        restart.addEventListener("click", startChat);
+        wrap.appendChild(ig); wrap.appendChild(restart);
+        chatDock.appendChild(wrap);
+      });
+    });
   }
   function startChat() {
     if (!chatLog) return;

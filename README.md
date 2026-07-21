@@ -30,9 +30,27 @@ When a visitor finishes the builder and clicks **Send my order**, the site opens
 to `Bsraulaas6@gmail.com` with all their choices. They just press send. An **Instagram** button is offered
 as an alternative. No payment is taken online — by design, since every candle is bespoke.
 
-### Optional upgrade — orders straight to your inbox (no email app needed)
-Sign up free at **formspree.io**, get a form ID, and the send button can post to it in ~2 lines
-(left as email-based for now so it works with zero setup).
+### ⭐ Get messages straight to your inbox (no email app for the customer)
+The site is already wired for direct delivery — it just needs a free **access key**
+tied to your email. Takes ~2 minutes:
+
+1. Go to **https://web3forms.com** and enter the studio email (`Bsraulaas6@gmail.com`).
+2. They instantly email you an **Access Key** (a long code like `a1b2c3d4-…`).
+3. Open `js/main.js`, find the line near the top of the submit section:
+   ```js
+   var FORM_ACCESS_KEY = "";
+   ```
+   Paste your key between the quotes, e.g. `var FORM_ACCESS_KEY = "a1b2c3d4-….";`
+4. Save, commit, push. Done.
+
+After that, both the **contact chat** and the **Create Your Candle** builder send every
+submission **straight to your inbox** — the customer never opens their own email. The chat
+shows a "Sent ⚜" confirmation. Web3Forms is free and unlimited; the key is safe to keep in
+the code (it only lets the form email *you*).
+
+> Until a key is added, the site safely falls back to opening a pre-filled email — nothing breaks.
+> Prefer a dashboard with spam filtering? **formspree.io** works the same way; send me the form
+> endpoint and I'll switch the two-line integration over.
 
 ## Things you may want to change
 - **Contact email** — search `Bsraulaas6@gmail.com` in `index.html` and `js/main.js`.

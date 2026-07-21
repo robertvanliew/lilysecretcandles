@@ -11,6 +11,8 @@
   var DICT = {
     /* ---------------- ENGLISH ---------------- */
     en: {
+      "wa.prefill":"Hello Lily's Secret! I'd like to ask about a candle.","wa.aria":"Chat with us on WhatsApp",
+      "footer.terms":"Terms","footer.privacy":"Privacy","footer.returns":"Returns",
       "form.sending":"Sending…",
       "form.sent":"Sent ⚜ Thank you — we'll be in touch very soon.",
       "form.error":"Hmm, that didn't go through. Please try Instagram, or email us directly.",
@@ -102,6 +104,8 @@
 
     /* ---------------- ARABIC (RTL) ---------------- */
     ar: {
+      "wa.prefill":"مرحباً ليليز سيكريت! أودّ الاستفسار عن شمعة.","wa.aria":"تحدّث معنا على واتساب",
+      "footer.terms":"الشروط","footer.privacy":"الخصوصية","footer.returns":"الإرجاع",
       "form.sending":"جارٍ الإرسال…",
       "form.sent":"تم الإرسال ⚜ شكراً لك — سنتواصل معك قريباً جداً.",
       "form.error":"لم يتم الإرسال. جرّب إنستغرام أو راسلنا مباشرة.",
@@ -193,6 +197,8 @@
 
     /* ---------------- TURKISH ---------------- */
     tr: {
+      "wa.prefill":"Merhaba Lily's Secret! Bir mum hakkında soru sormak istiyorum.","wa.aria":"WhatsApp'tan bize yazın",
+      "footer.terms":"Koşullar","footer.privacy":"Gizlilik","footer.returns":"İadeler",
       "form.sending":"Gönderiliyor…",
       "form.sent":"Gönderildi ⚜ Teşekkürler — çok yakında size döneceğiz.",
       "form.error":"Gönderilemedi. Lütfen Instagram'ı deneyin ya da bize doğrudan e-posta atın.",
@@ -284,6 +290,8 @@
 
     /* ---------------- FRENCH ---------------- */
     fr: {
+      "wa.prefill":"Bonjour Lily's Secret ! J'aimerais me renseigner sur une bougie.","wa.aria":"Discutez avec nous sur WhatsApp",
+      "footer.terms":"Conditions","footer.privacy":"Confidentialité","footer.returns":"Retours",
       "form.sending":"Envoi…",
       "form.sent":"Envoyé ⚜ Merci — nous vous répondrons très vite.",
       "form.error":"L'envoi a échoué. Essayez Instagram ou écrivez-nous directement.",
@@ -375,6 +383,8 @@
 
     /* ---------------- RUSSIAN ---------------- */
     ru: {
+      "wa.prefill":"Здравствуйте, Lily's Secret! Хочу узнать о свече.","wa.aria":"Напишите нам в WhatsApp",
+      "footer.terms":"Условия","footer.privacy":"Конфиденциальность","footer.returns":"Возврат",
       "form.sending":"Отправка…",
       "form.sent":"Отправлено ⚜ Спасибо — мы скоро свяжемся с вами.",
       "form.error":"Не удалось отправить. Напишите нам в Instagram или на почту.",
@@ -466,6 +476,8 @@
 
     /* ---------------- HINDI ---------------- */
     hi: {
+      "wa.prefill":"नमस्ते Lily's Secret! मैं एक मोमबत्ती के बारे में पूछना चाहता/चाहती हूँ।","wa.aria":"WhatsApp पर हमसे बात करें",
+      "footer.terms":"शर्तें","footer.privacy":"गोपनीयता","footer.returns":"वापसी",
       "form.sending":"भेजा जा रहा है…",
       "form.sent":"भेज दिया ⚜ धन्यवाद — हम जल्द ही संपर्क करेंगे।",
       "form.error":"भेजना विफल रहा। कृपया Instagram आज़माएँ या हमें सीधे ईमेल करें।",

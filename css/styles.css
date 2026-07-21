@@ -902,3 +902,10 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 .share-btn:hover{background:rgba(201,162,75,.14);border-color:var(--gold);transform:translateY(-2px)}
 .share-btn svg{width:15px;height:15px;fill:currentColor}
 [lang="ar"] .share-btn,[lang="hi"] .share-btn{letter-spacing:normal;text-transform:none}
+
+/* footer legal-entity line */
+.footer__entity{
+  position:relative;text-align:center;padding:0 var(--gutter) 1.4rem;
+  font-size:.68rem;letter-spacing:.03em;color:rgba(243,235,219,.4);
+  max-width:var(--wrap);margin-inline:auto;line-height:1.5;
+}

@@ -262,7 +262,7 @@
   }
 
   /* ---------- Submit (ALWAYS in English for the studio) ---------- */
-  var EMAIL = "Bsraulaas6@gmail.com";
+  var EMAIL = "hello@lilysecretcandles.com";
 
   // ── Direct-to-inbox delivery (Formspree) ────────────────────────────────
   // Submissions POST straight to this Formspree form, which forwards them to

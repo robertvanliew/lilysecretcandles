@@ -26,9 +26,10 @@ All translations live in `js/i18n.js` — edit the text there, keyed by language
 > Orders always arrive to you **in English** (see below), no matter which language the visitor used.
 
 ## How the "Create Your Candle" orders work
-When a visitor finishes the builder and clicks **Send my order**, the site opens a **pre-filled email**
-to `Bsraulaas6@gmail.com` with all their choices. They just press send. An **Instagram** button is offered
-as an alternative. No payment is taken online — by design, since every candle is bespoke.
+When a visitor finishes the builder and clicks **Send my order**, the choices are delivered straight to the
+studio (via Formspree — see below). The public address shown on the site is **hello@lilysecretcandles.com**
+(an ImprovMX alias that forwards to the studio inbox). No payment is taken online — by design, since every
+candle is bespoke.
 
 ### ✅ Direct-to-inbox delivery is LIVE (Formspree)
 Both the **contact chat** and the **Create Your Candle** builder now send every submission
@@ -51,7 +52,7 @@ localized "Sent ⚜" confirmation.
 > Instagram — nothing is lost silently.
 
 ## Things you may want to change
-- **Contact email** — search `Bsraulaas6@gmail.com` in `index.html` and `js/main.js`.
+- **Contact email** — search `hello@lilysecretcandles.com` in `index.html` and `js/main.js`.
 - **Instagram** — search `lillysecretcandlesdxb` in `index.html`.
 - **Launch offer text** — top of `index.html` (`.ribbon`) and `ribbon.text` in `js/i18n.js`.
 - **Brand colours** — top of `css/styles.css`, the `:root { … }` variables.

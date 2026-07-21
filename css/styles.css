@@ -861,3 +861,9 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 [dir="rtl"] .wa-fab{right:auto;left:20px}
 @media (max-width:560px){.wa-fab{width:52px;height:52px;right:16px;bottom:16px}}
 @media (prefers-reduced-motion:reduce){.wa-fab{animation:none}}
+
+/* WhatsApp order button (in the builder summary) */
+.btn--wa{background:#25D366;color:#fff;box-shadow:0 10px 26px -12px rgba(37,211,102,.7)}
+.btn--wa:hover{background:#1fbe5b;transform:translateY(-3px);box-shadow:0 16px 34px -12px rgba(37,211,102,.8)}
+.btn--wa .btn__wa{width:20px;height:20px;fill:currentColor;flex:none}
+.summary__cta+.summary__cta{margin-top:.7rem}

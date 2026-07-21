@@ -11,6 +11,7 @@
   var DICT = {
     /* ---------------- ENGLISH ---------------- */
     en: {
+      "summary.wa":"Order on WhatsApp",
       "wa.prefill":"Hello Lily's Secret! I'd like to ask about a candle.","wa.aria":"Chat with us on WhatsApp",
       "footer.terms":"Terms","footer.privacy":"Privacy","footer.returns":"Returns",
       "form.sending":"Sending…",
@@ -85,7 +86,7 @@
       "create.else":"Anything else?","create.elseph":"Vessel colour, gift wrap, corporate branding…",
       "summary.title":"Your Secret Candle","summary.frag":"Fragrance","summary.msg":"Secret message","summary.occ":"Occasion","summary.qty":"Quantity",
       "summary.send":"Send my order →","summary.ig":"or message us on Instagram",
-      "summary.fine":"Sending opens a pre-filled email to our studio. No payment is taken online — we confirm every bespoke order personally.",
+      "summary.fine":"Your order is sent straight to our studio. No payment is taken online — we confirm every bespoke order personally.",
       "footer.explore":"Explore","footer.touch":"Get in touch","footer.ready":"Ready?",
       "footer.readyp":"Every order is a one-of-a-kind piece. Let's talk fragrance, message and occasion.",
       "footer.loc":"Handmade in Dubai, UAE","footer.tagline":"<em>Patience brings the light. The flame reveals the secret.</em>",
@@ -104,6 +105,7 @@
 
     /* ---------------- ARABIC (RTL) ---------------- */
     ar: {
+      "summary.wa":"اطلب عبر واتساب",
       "wa.prefill":"مرحباً ليليز سيكريت! أودّ الاستفسار عن شمعة.","wa.aria":"تحدّث معنا على واتساب",
       "footer.terms":"الشروط","footer.privacy":"الخصوصية","footer.returns":"الإرجاع",
       "form.sending":"جارٍ الإرسال…",
@@ -178,7 +180,7 @@
       "create.else":"أي شيء آخر؟","create.elseph":"لون الوعاء، تغليف الهدية، علامة الشركة…",
       "summary.title":"شمعتك السرّية","summary.frag":"العطر","summary.msg":"الرسالة السرّية","summary.occ":"المناسبة","summary.qty":"الكمية",
       "summary.send":"أرسل طلبي →","summary.ig":"أو راسلنا على إنستغرام",
-      "summary.fine":"الإرسال يفتح بريداً إلكترونياً معبّأً مسبقاً إلى الاستوديو. لا يتم الدفع عبر الإنترنت — نؤكّد كل طلب خاص شخصياً.",
+      "summary.fine":"يُرسَل طلبك مباشرةً إلى استوديونا. لا يتم الدفع عبر الإنترنت — نؤكّد كل طلب خاص شخصياً.",
       "footer.explore":"استكشف","footer.touch":"تواصل معنا","footer.ready":"جاهز؟",
       "footer.readyp":"كل طلب قطعة فريدة. لنتحدّث عن العطر والرسالة والمناسبة.",
       "footer.loc":"صناعة يدوية في دبي، الإمارات","footer.tagline":"<em>الصبر يجلب النور. واللهب يكشف السرّ.</em>",
@@ -197,6 +199,7 @@
 
     /* ---------------- TURKISH ---------------- */
     tr: {
+      "summary.wa":"WhatsApp'tan sipariş ver",
       "wa.prefill":"Merhaba Lily's Secret! Bir mum hakkında soru sormak istiyorum.","wa.aria":"WhatsApp'tan bize yazın",
       "footer.terms":"Koşullar","footer.privacy":"Gizlilik","footer.returns":"İadeler",
       "form.sending":"Gönderiliyor…",
@@ -271,7 +274,7 @@
       "create.else":"Başka bir şey?","create.elseph":"Kap rengi, hediye paketi, kurumsal marka…",
       "summary.title":"Gizli Mumun","summary.frag":"Koku","summary.msg":"Gizli mesaj","summary.occ":"An","summary.qty":"Adet",
       "summary.send":"Siparişimi gönder →","summary.ig":"veya Instagram'dan yaz",
-      "summary.fine":"Gönderim, stüdyomuza önceden doldurulmuş bir e-posta açar. Çevrimiçi ödeme alınmaz — her özel siparişi bizzat onaylıyoruz.",
+      "summary.fine":"Siparişiniz doğrudan stüdyomuza gönderilir. Çevrimiçi ödeme alınmaz — her özel siparişi bizzat onaylıyoruz.",
       "footer.explore":"Keşfet","footer.touch":"İletişime geç","footer.ready":"Hazır mısın?",
       "footer.readyp":"Her sipariş eşsiz bir parçadır. Koku, mesaj ve anı konuşalım.",
       "footer.loc":"Dubai, BAE'de el yapımı","footer.tagline":"<em>Sabır ışığı getirir. Alev sırrı açığa çıkarır.</em>",
@@ -290,6 +293,7 @@
 
     /* ---------------- FRENCH ---------------- */
     fr: {
+      "summary.wa":"Commander sur WhatsApp",
       "wa.prefill":"Bonjour Lily's Secret ! J'aimerais me renseigner sur une bougie.","wa.aria":"Discutez avec nous sur WhatsApp",
       "footer.terms":"Conditions","footer.privacy":"Confidentialité","footer.returns":"Retours",
       "form.sending":"Envoi…",
@@ -364,7 +368,7 @@
       "create.else":"Autre chose ?","create.elseph":"Couleur du contenant, emballage cadeau, marque d'entreprise…",
       "summary.title":"Votre bougie secrète","summary.frag":"Fragrance","summary.msg":"Message secret","summary.occ":"Occasion","summary.qty":"Quantité",
       "summary.send":"Envoyer ma commande →","summary.ig":"ou écrivez-nous sur Instagram",
-      "summary.fine":"L'envoi ouvre un e-mail pré-rempli vers notre atelier. Aucun paiement en ligne — nous confirmons chaque commande sur mesure personnellement.",
+      "summary.fine":"Votre commande est envoyée directement à notre atelier. Aucun paiement en ligne — nous confirmons chaque commande sur mesure personnellement.",
       "footer.explore":"Explorer","footer.touch":"Nous contacter","footer.ready":"Prêt ?",
       "footer.readyp":"Chaque commande est une pièce unique. Parlons fragrance, message et occasion.",
       "footer.loc":"Fait main à Dubaï, ÉAU","footer.tagline":"<em>La patience apporte la lumière. La flamme révèle le secret.</em>",
@@ -383,6 +387,7 @@
 
     /* ---------------- RUSSIAN ---------------- */
     ru: {
+      "summary.wa":"Заказать в WhatsApp",
       "wa.prefill":"Здравствуйте, Lily's Secret! Хочу узнать о свече.","wa.aria":"Напишите нам в WhatsApp",
       "footer.terms":"Условия","footer.privacy":"Конфиденциальность","footer.returns":"Возврат",
       "form.sending":"Отправка…",
@@ -457,7 +462,7 @@
       "create.else":"Что-нибудь ещё?","create.elseph":"Цвет сосуда, подарочная упаковка, фирменный стиль…",
       "summary.title":"Ваша секретная свеча","summary.frag":"Аромат","summary.msg":"Секретное послание","summary.occ":"Повод","summary.qty":"Количество",
       "summary.send":"Отправить заказ →","summary.ig":"или напишите нам в Instagram",
-      "summary.fine":"Отправка откроет заполненное письмо в нашу студию. Оплата онлайн не взимается — каждый индивидуальный заказ мы подтверждаем лично.",
+      "summary.fine":"Ваш заказ отправляется прямо в нашу студию. Оплата онлайн не взимается — каждый индивидуальный заказ мы подтверждаем лично.",
       "footer.explore":"Разделы","footer.touch":"Связаться","footer.ready":"Готовы?",
       "footer.readyp":"Каждый заказ — уникальная вещь. Обсудим аромат, послание и повод.",
       "footer.loc":"Ручная работа в Дубае, ОАЭ","footer.tagline":"<em>Терпение приносит свет. Пламя раскрывает секрет.</em>",
@@ -476,6 +481,7 @@
 
     /* ---------------- HINDI ---------------- */
     hi: {
+      "summary.wa":"WhatsApp पर ऑर्डर करें",
       "wa.prefill":"नमस्ते Lily's Secret! मैं एक मोमबत्ती के बारे में पूछना चाहता/चाहती हूँ।","wa.aria":"WhatsApp पर हमसे बात करें",
       "footer.terms":"शर्तें","footer.privacy":"गोपनीयता","footer.returns":"वापसी",
       "form.sending":"भेजा जा रहा है…",
@@ -550,7 +556,7 @@
       "create.else":"और कुछ?","create.elseph":"पात्र का रंग, गिफ़्ट रैप, कॉर्पोरेट ब्रांडिंग…",
       "summary.title":"आपकी गुप्त मोमबत्ती","summary.frag":"सुगंध","summary.msg":"गुप्त संदेश","summary.occ":"अवसर","summary.qty":"मात्रा",
       "summary.send":"मेरा ऑर्डर भेजें →","summary.ig":"या हमें Instagram पर संदेश करें",
-      "summary.fine":"भेजने पर हमारे स्टूडियो को एक पहले से भरा ईमेल खुलता है। ऑनलाइन कोई भुगतान नहीं लिया जाता — हर विशेष ऑर्डर की पुष्टि हम व्यक्तिगत रूप से करते हैं।",
+      "summary.fine":"आपका ऑर्डर सीधे हमारे स्टूडियो भेजा जाता है। ऑनलाइन कोई भुगतान नहीं लिया जाता — हर विशेष ऑर्डर की पुष्टि हम व्यक्तिगत रूप से करते हैं।",
       "footer.explore":"जानें","footer.touch":"संपर्क करें","footer.ready":"तैयार?",
       "footer.readyp":"हर ऑर्डर एक अद्वितीय कृति है। सुगंध, संदेश और अवसर पर बात करें।",
       "footer.loc":"दुबई, यूएई में हस्तनिर्मित","footer.tagline":"<em>धैर्य रोशनी लाता है। लौ राज़ को उजागर करती है।</em>",

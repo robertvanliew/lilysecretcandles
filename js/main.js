@@ -42,12 +42,13 @@
   // Put the studio's WhatsApp number here in international format, digits only
   // (no +, spaces or dashes) — e.g. a UAE number "9715XXXXXXXX".
   // Leave "" and the WhatsApp button/link stay hidden.
-  var WHATSAPP = "";
+  var WHATSAPP = "971504365350";
   function waLink() { return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(t("wa.prefill")); }
   var waFooter = $("#waFooter"), waFab = null;
   function initWhatsApp() {
     if (!WHATSAPP) return;
     if (waFooter) { waFooter.href = waLink(); waFooter.hidden = false; }
+    var owa = $("#orderWa"); if (owa) owa.hidden = false;
     if (!waFab) {
       waFab = document.createElement("a");
       waFab.className = "wa-fab";
@@ -323,8 +324,8 @@
     if (sel.msgIndex >= 0) return I18N.en("msg." + sel.msgIndex);
     return "";
   }
-  var sendBtn = $("#sendOrder");
-  if (sendBtn) sendBtn.addEventListener("click", function () {
+  // Validate + build the order text. Returns null (and nudges the user) if incomplete.
+  function buildOrder() {
     var missing = [];
     if (!sel.frag) missing.push(t("toast.frag"));
     if (!sel.msgCustom && sel.msgIndex < 0) missing.push(t("toast.msgsel"));
@@ -332,7 +333,7 @@
       toast(t("toast.pleasechoose") + " " + missing.join(" " + t("toast.and") + " ") + " " + t("toast.complete"));
       var target = !sel.frag ? "#fragChips" : "#msgChips";
       var tEl = $(target); if (tEl) tEl.scrollIntoView({ behavior: "smooth", block: "center" });
-      return;
+      return null;
     }
     var occEN = sel.occ ? I18N.en("occname." + sel.occ) : "—";
     var msgType = sel.msgCustom ? "custom" : "suggested";
@@ -351,13 +352,26 @@
       "",
       "Please confirm availability and the final details. Thank you!"
     ];
-    var subject = "Bespoke candle order — " + sel.frag + (sel.occ ? " · " + occEN : "");
+    return { subject: "Bespoke candle order — " + sel.frag + (sel.occ ? " · " + occEN : ""), body: lines.join("\n") };
+  }
+
+  var sendBtn = $("#sendOrder");
+  if (sendBtn) sendBtn.addEventListener("click", function () {
+    var o = buildOrder(); if (!o) return;
     toast(t("form.sending"));
-    submitToStudio(subject, lines.join("\n"), sel.name, sel.contact, function (ok) {
+    submitToStudio(o.subject, o.body, sel.name, sel.contact, function (ok) {
       if (ok === false) toast(t("form.error"));
       else if (ok === true) toast(t("form.sent"));
       else toast(t("toast.opening"));
     });
+  });
+
+  // Order via WhatsApp — opens WhatsApp to the studio with the full order pre-filled.
+  var orderWaBtn = $("#orderWa");
+  if (orderWaBtn) orderWaBtn.addEventListener("click", function () {
+    if (!WHATSAPP) return;
+    var o = buildOrder(); if (!o) return;
+    window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(o.body), "_blank", "noopener");
   });
 
   /* ============================================================

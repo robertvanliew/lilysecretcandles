@@ -264,8 +264,11 @@
     void candle.offsetWidth;                       // restart the reveal animation
     requestAnimationFrame(function () { candle.classList.add("lit"); });
   }
+  var smokeTimer;
   function ignite() {
     candleLit = true;
+    clearTimeout(smokeTimer);
+    candle.classList.remove("smoking");
     playReveal(candleIdx);
     lightBtn.textContent = t("secret.blowout");
     if (nextBtn) nextBtn.hidden = false;
@@ -274,6 +277,10 @@
   function extinguish() {
     candleLit = false;
     candle.classList.remove("lit");                // flame out, message hides, label returns
+    candle.classList.remove("smoking"); void candle.offsetWidth;  // restart if toggled fast
+    candle.classList.add("smoking");               // a wisp of smoke rises from the wick
+    clearTimeout(smokeTimer);
+    smokeTimer = setTimeout(function () { candle.classList.remove("smoking"); }, 1900);
     lightBtn.textContent = t("secret.light");
     if (nextBtn) nextBtn.hidden = true;
     if (hint) hint.textContent = t("secret.hint");

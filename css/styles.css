@@ -922,3 +922,21 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 .bstep-actions .btn{justify-content:center;width:100%}
 .bstep-actions__note{font-size:.74rem;color:rgba(243,235,219,.5);text-align:center;line-height:1.5;margin-top:.1rem}
 @media (max-width:860px){ .bstep-actions{display:none} }
+
+/* candle smoke — a wisp that rises when the candle is blown out */
+.candle__smoke{position:absolute;left:50%;top:2%;transform:translateX(-50%);width:30px;height:74px;z-index:8;pointer-events:none}
+.candle__smoke span{
+  position:absolute;left:50%;bottom:0;width:13px;height:13px;border-radius:50%;
+  background:radial-gradient(circle, rgba(240,238,233,.9), rgba(220,216,208,0) 72%);
+  opacity:0;filter:blur(2.5px);will-change:transform,opacity;
+}
+.candle.smoking .candle__smoke span{animation:smoke 1.8s ease-out forwards}
+.candle.smoking .candle__smoke span:nth-child(2){animation-delay:.2s}
+.candle.smoking .candle__smoke span:nth-child(3){animation-delay:.42s}
+@keyframes smoke{
+  0%{opacity:0;transform:translate(-50%,4px) scale(.5)}
+  15%{opacity:.95}
+  50%{opacity:.75;transform:translate(-74%,-30px) scale(1.7)}
+  100%{opacity:0;transform:translate(-34%,-64px) scale(2.8)}
+}
+@media (prefers-reduced-motion:reduce){.candle.smoking .candle__smoke span{animation:none}}

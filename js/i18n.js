@@ -11,6 +11,7 @@
   var DICT = {
     /* ---------------- ENGLISH ---------------- */
     en: {
+      "emailform.title":"Send us a message","emailform.email":"Your email","emailform.emailph":"you@example.com","emailform.msg":"Message","emailform.send":"Send message",
       "share.label":"Share","share.copied":"Link copied ✓",
       "share.text":"Bespoke candles with a secret message hidden in the wax — handmade in the UAE.",
       "faq.eyebrow":"Questions","faq.title":"Frequently asked",
@@ -113,6 +114,7 @@
 
     /* ---------------- ARABIC (RTL) ---------------- */
     ar: {
+      "emailform.title":"أرسل لنا رسالة","emailform.email":"بريدك الإلكتروني","emailform.emailph":"you@example.com","emailform.msg":"الرسالة","emailform.send":"أرسل الرسالة",
       "share.label":"مشاركة","share.copied":"تم نسخ الرابط ✓",
       "share.text":"شموع مخصّصة برسالة سرّية مخبّأة في الشمع — صناعة يدوية في الإمارات.",
       "faq.eyebrow":"أسئلة","faq.title":"الأسئلة الشائعة",
@@ -215,6 +217,7 @@
 
     /* ---------------- TURKISH ---------------- */
     tr: {
+      "emailform.title":"Bize mesaj gönderin","emailform.email":"E-postanız","emailform.emailph":"you@example.com","emailform.msg":"Mesaj","emailform.send":"Mesaj gönder",
       "share.label":"Paylaş","share.copied":"Bağlantı kopyalandı ✓",
       "share.text":"Balmumunda gizli bir mesaj taşıyan kişiye özel mumlar — BAE'de el yapımı.",
       "faq.eyebrow":"Sorular","faq.title":"Sık sorulanlar",
@@ -317,6 +320,7 @@
 
     /* ---------------- FRENCH ---------------- */
     fr: {
+      "emailform.title":"Envoyez-nous un message","emailform.email":"Votre e-mail","emailform.emailph":"vous@exemple.com","emailform.msg":"Message","emailform.send":"Envoyer le message",
       "share.label":"Partager","share.copied":"Lien copié ✓",
       "share.text":"Des bougies sur mesure avec un message secret caché dans la cire — faites main aux Émirats arabes unis.",
       "faq.eyebrow":"Questions","faq.title":"Questions fréquentes",
@@ -419,6 +423,7 @@
 
     /* ---------------- RUSSIAN ---------------- */
     ru: {
+      "emailform.title":"Напишите нам","emailform.email":"Ваш e-mail","emailform.emailph":"you@example.com","emailform.msg":"Сообщение","emailform.send":"Отправить сообщение",
       "share.label":"Поделиться","share.copied":"Ссылка скопирована ✓",
       "share.text":"Персональные свечи с секретным посланием, спрятанным в воске — ручная работа из ОАЭ.",
       "faq.eyebrow":"Вопросы","faq.title":"Частые вопросы",
@@ -521,6 +526,7 @@
 
     /* ---------------- HINDI ---------------- */
     hi: {
+      "emailform.title":"हमें संदेश भेजें","emailform.email":"आपका ईमेल","emailform.emailph":"you@example.com","emailform.msg":"संदेश","emailform.send":"संदेश भेजें",
       "share.label":"साझा करें","share.copied":"लिंक कॉपी हो गया ✓",
       "share.text":"मोम में छिपे गुप्त संदेश वाली वैयक्तिक मोमबत्तियाँ — यूएई में हस्तनिर्मित।",
       "faq.eyebrow":"सवाल","faq.title":"अक्सर पूछे जाने वाले सवाल",

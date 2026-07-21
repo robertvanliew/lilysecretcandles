@@ -526,7 +526,7 @@
         <h4 data-i18n="footer.touch">Get in touch</h4>
         <a href="https://www.instagram.com/lillysecretcandlesdxb" target="_blank" rel="noopener">Instagram</a>
         <a id="waFooter" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
-        <a href="mailto:hello@lilysecretcandles.com">hello@lilysecretcandles.com</a>
+        <a class="js-emailform" href="mailto:hello@lilysecretcandles.com">hello@lilysecretcandles.com</a>
         <span class="footer__loc" data-i18n="footer.loc">Handmade in the UAE</span>
       </div>
       <div class="footer__col footer__col--cta">
@@ -555,6 +555,22 @@
 </footer>
 
 </main>
+
+<!-- ============ EMAIL MODAL (footer email → popup form, no mail app) ============ -->
+<div class="modal" id="emailModal" hidden>
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle">
+    <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+    <span class="modal__seal" aria-hidden="true"><img src="assets/images/logo-seal.png" alt="" /></span>
+    <h3 class="modal__title" id="emailModalTitle" data-i18n="emailform.title">Send us a message</h3>
+    <form class="modal__form" id="emailForm" novalidate>
+      <label class="field"><span class="field__label" data-i18n="create.name">Your name</span><input type="text" id="emName" autocomplete="name" required data-i18n-ph="create.nameph" placeholder="Full name" /></label>
+      <label class="field"><span class="field__label" data-i18n="emailform.email">Your email</span><input type="email" id="emEmail" autocomplete="email" required data-i18n-ph="emailform.emailph" placeholder="you@example.com" /></label>
+      <label class="field"><span class="field__label" data-i18n="emailform.msg">Message</span><textarea id="emMsg" rows="4" required data-i18n-ph="contact.detailPh" placeholder="Your message…"></textarea></label>
+      <button class="btn btn--gold" type="submit" data-i18n="emailform.send">Send message</button>
+    </form>
+  </div>
+</div>
 
 <!-- ============ SVG SPRITE (icons) ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">

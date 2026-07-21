@@ -74,6 +74,42 @@
     } else { toast(url); }
   });
 
+  /* ---------- Email modal (footer email opens a popup form instead of a mail app) ---------- */
+  var emailModal = $("#emailModal"), emailForm = $("#emailForm");
+  function openEmailModal() {
+    if (!emailModal) return;
+    emailModal.hidden = false;
+    document.body.style.overflow = "hidden";
+    var first = $("#emName");
+    if (first) setTimeout(function () { try { first.focus(); } catch (e) {} }, 40);
+  }
+  function closeEmailModal() {
+    if (!emailModal) return;
+    emailModal.hidden = true;
+    document.body.style.overflow = "";
+  }
+  $$(".js-emailform").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); openEmailModal(); });   // JS on → popup; JS off → mailto
+  });
+  if (emailModal) {
+    emailModal.addEventListener("click", function (e) { if (e.target.hasAttribute("data-close")) closeEmailModal(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !emailModal.hidden) closeEmailModal(); });
+  }
+  if (emailForm) emailForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = $("#emName").value.trim(), email = $("#emEmail").value.trim(), msg = $("#emMsg").value.trim();
+    if (!name || !msg || email.indexOf("@") < 1) { toast(t("form.error")); return; }
+    var subject = "Website message — " + name;
+    var body = ["New message from the Lily's Secret website:", "", "• Name: " + name, "• Email: " + email, "• Message: " + msg].join("\n");
+    var btn = emailForm.querySelector('button[type="submit"]');
+    btn.disabled = true; toast(t("form.sending"));
+    submitToStudio(subject, body, name, email, function (ok) {
+      btn.disabled = false;
+      if (ok === false) { toast(t("form.error")); return; }
+      toast(t("form.sent")); emailForm.reset(); closeEmailModal();
+    });
+  });
+
   /* ---------- Year ---------- */
   var yr = $("#yr"); if (yr) yr.textContent = new Date().getFullYear();
 

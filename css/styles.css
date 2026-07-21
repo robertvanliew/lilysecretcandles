@@ -375,11 +375,11 @@ em{font-style:italic}
 .candle__msg{
   position:absolute;left:50%;bottom:16%;transform:translateX(-50%);z-index:4;
   width:84%;text-align:center;color:var(--wine-800);
-  opacity:0;transition:opacity 1.1s var(--ease) .9s;
+  opacity:0;transition:opacity .5s var(--ease);   /* fast, crisp fade-out on blow-out */
   padding:1.2rem .6rem;border-radius:46%/38%;
   background:radial-gradient(58% 92% at 50% 50%,rgba(255,243,214,.99),rgba(255,239,203,.82) 48%,rgba(255,239,203,.35) 68%,transparent 82%);
 }
-.candle.lit .candle__msg{opacity:1}
+.candle.lit .candle__msg{opacity:1;transition:opacity 1.1s var(--ease) .9s}  /* slow, delayed reveal */
 .candle__fleur{color:var(--wine-600);font-size:1rem;display:block;line-height:1}
 .candle__message{font-family:var(--font-display);font-style:italic;font-size:1.16rem;line-height:1.34;margin:.4rem 0;color:var(--wine-800)}
 

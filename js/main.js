@@ -222,23 +222,33 @@
   var candle = $("#candle"), secretMsg = $("#secretMsg"),
       lightBtn = $("#lightBtn"), nextBtn = $("#nextMsg"), hint = $("#revealHint");
   var candleIdx = 0, candleLit = false;
-  function revealCandle(i) {
-    if (!candle) return;
+  function playReveal(i) {
     secretMsg.textContent = t("msg." + i);
     candle.classList.remove("lit");
-    void candle.offsetWidth;
+    void candle.offsetWidth;                       // restart the reveal animation
     requestAnimationFrame(function () { candle.classList.add("lit"); });
   }
-  if (lightBtn) lightBtn.addEventListener("click", function () {
+  function ignite() {
     candleLit = true;
-    revealCandle(candleIdx);
-    lightBtn.textContent = t("secret.relight");
+    playReveal(candleIdx);
+    lightBtn.textContent = t("secret.blowout");
     if (nextBtn) nextBtn.hidden = false;
     if (hint) hint.textContent = t("secret.hint2");
+  }
+  function extinguish() {
+    candleLit = false;
+    candle.classList.remove("lit");                // flame out, message hides, label returns
+    lightBtn.textContent = t("secret.light");
+    if (nextBtn) nextBtn.hidden = true;
+    if (hint) hint.textContent = t("secret.hint");
+  }
+  if (lightBtn) lightBtn.addEventListener("click", function () {
+    if (!candle) return;
+    if (candleLit) extinguish(); else ignite();
   });
   if (nextBtn) nextBtn.addEventListener("click", function () {
     candleIdx = (candleIdx + 1) % 6;
-    revealCandle(candleIdx);
+    if (candleLit) playReveal(candleIdx); else ignite();
   });
 
   /* ---------- Toast ---------- */
@@ -301,8 +311,8 @@
     refreshSummary();
     updateMsgCount();
     if (candleLit) secretMsg.textContent = t("msg." + candleIdx);
-    if (lightBtn) lightBtn.textContent = candleLit ? t("secret.relight") : t("secret.light");
-    if (hint && candleLit) hint.textContent = t("secret.hint2");
+    if (lightBtn) lightBtn.textContent = candleLit ? t("secret.blowout") : t("secret.light");
+    if (hint) hint.textContent = candleLit ? t("secret.hint2") : t("secret.hint");
     bindReveal();
   }
   renderAll();

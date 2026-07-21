@@ -30,27 +30,25 @@ When a visitor finishes the builder and clicks **Send my order**, the site opens
 to `Bsraulaas6@gmail.com` with all their choices. They just press send. An **Instagram** button is offered
 as an alternative. No payment is taken online — by design, since every candle is bespoke.
 
-### ⭐ Get messages straight to your inbox (no email app for the customer)
-The site is already wired for direct delivery — it just needs a free **access key**
-tied to your email. Takes ~2 minutes:
+### ✅ Direct-to-inbox delivery is LIVE (Formspree)
+Both the **contact chat** and the **Create Your Candle** builder now send every submission
+**straight to the studio inbox** — the customer never opens their own email. The chat shows a
+localized "Sent ⚜" confirmation.
 
-1. Go to **https://web3forms.com** and enter the studio email (`Bsraulaas6@gmail.com`).
-2. They instantly email you an **Access Key** (a long code like `a1b2c3d4-…`).
-3. Open `js/main.js`, find the line near the top of the submit section:
-   ```js
-   var FORM_ACCESS_KEY = "";
-   ```
-   Paste your key between the quotes, e.g. `var FORM_ACCESS_KEY = "a1b2c3d4-….";`
-4. Save, commit, push. Done.
+- **Where submissions go:** the Formspree form `https://formspree.io/f/maqrblvg` forwards them to
+  the email on that Formspree account, and they're also visible in the Formspree dashboard.
+- **First-time note:** Formspree emails the owner once to *confirm* a new form — click that link
+  in the inbox so messages start flowing (only needed once).
+- **Free tier:** ~50 submissions/month; upgrade on Formspree if volume grows.
+- **To change the destination/form later:** edit one line near the top of the submit section in
+  `js/main.js`:
+  ```js
+  var FORM_ENDPOINT = "https://formspree.io/f/maqrblvg";
+  ```
+  Set it to `""` to fall back to opening a pre-filled email instead.
 
-After that, both the **contact chat** and the **Create Your Candle** builder send every
-submission **straight to your inbox** — the customer never opens their own email. The chat
-shows a "Sent ⚜" confirmation. Web3Forms is free and unlimited; the key is safe to keep in
-the code (it only lets the form email *you*).
-
-> Until a key is added, the site safely falls back to opening a pre-filled email — nothing breaks.
-> Prefer a dashboard with spam filtering? **formspree.io** works the same way; send me the form
-> endpoint and I'll switch the two-line integration over.
+> If a submission ever fails (offline, quota), the chat shows a friendly error and points to
+> Instagram — nothing is lost silently.
 
 ## Things you may want to change
 - **Contact email** — search `Bsraulaas6@gmail.com` in `index.html` and `js/main.js`.

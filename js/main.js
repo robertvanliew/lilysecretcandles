@@ -264,30 +264,31 @@
   /* ---------- Submit (ALWAYS in English for the studio) ---------- */
   var EMAIL = "Bsraulaas6@gmail.com";
 
-  // ── Direct-to-inbox delivery ────────────────────────────────────────────
-  // Paste a Web3Forms access key here (free — get one at https://web3forms.com,
-  // tied to the studio's email address) to send every submission STRAIGHT to
-  // the inbox, with no email app opening for the customer.
-  // Leave it "" and the site falls back to opening a pre-filled email.
-  var FORM_ACCESS_KEY = "";
+  // ── Direct-to-inbox delivery (Formspree) ────────────────────────────────
+  // Submissions POST straight to this Formspree form, which forwards them to
+  // the studio inbox — no email app opens for the customer.
+  // To move to a different form later, just replace this endpoint. Set it to ""
+  // to fall back to opening a pre-filled email instead.
+  var FORM_ENDPOINT = "https://formspree.io/f/maqrblvg";
 
   // Delivers {subject, message} to the studio.
   // onDone(true) = sent to inbox · false = failed · null = used mailto fallback.
   function submitToStudio(subject, message, fromName, replyTo, onDone) {
-    if (FORM_ACCESS_KEY) {
-      fetch("https://api.web3forms.com/submit", {
+    if (FORM_ENDPOINT) {
+      var params = new URLSearchParams();
+      params.set("_subject", subject);
+      params.set("name", fromName || "Lily's Secret website");
+      params.set("message", message);
+      if (replyTo && replyTo.indexOf("@") > -1) params.set("email", replyTo);   // reply-to when it's an email
+      fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({
-          access_key: FORM_ACCESS_KEY,
-          subject: subject,
-          from_name: fromName || "Lily's Secret website",
-          replyto: replyTo || "",
-          message: message
-        })
-      }).then(function (r) { return r.json(); })
-        .then(function (d) { onDone(d && d.success ? true : false); })
-        .catch(function () { onDone(false); });
+        headers: { "Accept": "application/json" },   // body is form-encoded (set automatically)
+        body: params
+      }).then(function (r) {
+        return r.json().then(function (d) { return { ok: r.ok, d: d }; }, function () { return { ok: r.ok, d: null }; });
+      }).then(function (res) {
+        onDone(res.ok && !(res.d && res.d.errors) ? true : false);
+      }).catch(function () { onDone(false); });
     } else {
       window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
       onDone(null);

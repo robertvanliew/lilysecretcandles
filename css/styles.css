@@ -980,7 +980,7 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
    ========================================================= */
 .footer{padding-top:0}                 /* the crest now sets the top rhythm */
 .footer > .wrap,.footer__trust,.footer__base,.footer__entity,.footer__credit,.footer__crest{position:relative;z-index:1}
-.footer__glow,.footer__watermark{position:absolute;z-index:0;pointer-events:none}
+.footer__glow{position:absolute;z-index:0;pointer-events:none}
 
 /* flame crest divider */
 .footer__crest{
@@ -996,13 +996,7 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 
 /* warm candle glow + giant faint wordmark watermark */
 .footer__glow{top:0;left:50%;transform:translateX(-50%);width:min(920px,92%);height:320px;
-  background:radial-gradient(60% 100% at 50% 0%, rgba(230,178,90,.15), transparent 70%)}
-.footer__watermark{
-  left:50%;bottom:-1.6vw;transform:translateX(-50%);white-space:nowrap;user-select:none;
-  font-family:var(--font-display);font-weight:600;line-height:.8;
-  font-size:clamp(5rem,17vw,17rem);color:transparent;
-  -webkit-text-stroke:1px rgba(201,162,75,.08);
-}
+  background:radial-gradient(60% 100% at 50% 0%, rgba(230,178,90,.13), transparent 70%)}
 
 /* animated link underline in the columns */
 .footer__col a{position:relative}

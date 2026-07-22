@@ -133,7 +133,7 @@
 <!-- ============ HEADER ============ -->
 <header class="header" id="header">
   <div class="header__inner">
-    <a href="#top" class="brand" aria-label="Lily's Secret home">
+    <a href="#top" class="brand">
       <span class="brand__seal" aria-hidden="true">
         <img src="assets/images/logo-seal.png" alt="" />
       </span>
@@ -153,7 +153,7 @@
 
     <!-- Language switcher -->
     <div class="lang" id="lang">
-      <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose language">
+      <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" title="Language">
         <svg viewBox="0 0 24 24" class="lang__globe" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
         <span class="lang__cur" id="langCur">EN</span>
         <svg viewBox="0 0 10 6" class="lang__chev" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -205,7 +205,10 @@
     </div>
     <figure class="hero__media reveal">
       <div class="hero__frame">
-        <img src="assets/images/hero-candle-seal.jpeg" alt="A lit Lily's Secret candle beside its burgundy wax seal and gold seals" loading="eager" />
+        <video class="hero__video" poster="assets/images/hero-loop-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="A lit Lily's Secret candle, its flame gently flickering">
+          <source src="assets/video/hero-loop.mp4" type="video/mp4" />
+          <img src="assets/images/hero-candle-seal.jpeg" alt="A lit Lily's Secret candle beside its burgundy wax seal" />
+        </video>
       </div>
       <figcaption class="hero__cap" data-i18n="hero.cap">One-of-a-kind · Handmade to order</figcaption>
     </figure>
@@ -495,7 +498,7 @@
       <p class="section__sub" data-i18n="contact.sub">Prefer to just chat? Tell us what you have in mind — a few quick questions and it lands in our studio inbox.</p>
     </header>
     <div class="chat reveal" id="chat">
-      <div class="chat__log" id="chatLog" aria-live="polite" aria-label="Conversation with Lily's Secret"></div>
+      <div class="chat__log" id="chatLog" role="log" aria-live="polite" aria-label="Conversation with Lily's Secret"></div>
       <div class="chat__dock" id="chatDock"></div>
       <p class="chat__fine" data-i18n="contact.fine">Your message goes straight to our studio — no details are stored on this site.</p>
     </div>
@@ -516,21 +519,21 @@
     </div>
     <div class="footer__cols">
       <div class="footer__col">
-        <h4 data-i18n="footer.explore">Explore</h4>
+        <h3 data-i18n="footer.explore">Explore</h3>
         <a href="#secret" data-i18n="nav.secret">The Secret</a>
         <a href="#fragrances" data-i18n="nav.fragrances">Fragrances</a>
         <a href="#how" data-i18n="nav.how">How It Works</a>
         <a href="#occasions" data-i18n="nav.occasions">Occasions</a>
       </div>
       <div class="footer__col">
-        <h4 data-i18n="footer.touch">Get in touch</h4>
+        <h3 data-i18n="footer.touch">Get in touch</h3>
         <a href="https://www.instagram.com/lillysecretcandlesdxb" target="_blank" rel="noopener">Instagram</a>
         <a id="waFooter" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
         <a class="js-emailform" href="mailto:hello@lilysecretcandles.com">hello@lilysecretcandles.com</a>
         <span class="footer__loc" data-i18n="footer.loc">Handmade in the UAE</span>
       </div>
       <div class="footer__col footer__col--cta">
-        <h4 data-i18n="footer.ready">Ready?</h4>
+        <h3 data-i18n="footer.ready">Ready?</h3>
         <p data-i18n="footer.readyp">Every order is a one-of-a-kind piece. Let's talk fragrance, message and occasion.</p>
         <a href="#create" class="btn btn--gold" data-i18n="cta.create">Create Your Candle</a>
       </div>

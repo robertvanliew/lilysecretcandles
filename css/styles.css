@@ -908,9 +908,9 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 
 /* footer legal-entity line */
 .footer__entity{
-  position:relative;text-align:center;padding:0 var(--gutter) 1.4rem;
+  position:relative;text-align:center;padding:1.5rem var(--gutter) .55rem;
   font-size:.68rem;letter-spacing:.03em;color:rgba(243,235,219,.55);
-  max-width:var(--wrap);margin-inline:auto;line-height:1.5;
+  max-width:64ch;margin-inline:auto;line-height:1.6;
 }
 
 /* Order actions at the end of the builder form (desktop; mobile uses the summary) */
@@ -969,8 +969,8 @@ input:focus,textarea:focus{border-color:var(--gold-bright);background:rgba(255,2
 
 /* footer designer credit */
 .footer__credit{
-  text-align:center;padding:.2rem var(--gutter) 1.6rem;
-  font-size:.72rem;letter-spacing:.08em;color:rgba(243,235,219,.55);
+  text-align:center;padding:0 var(--gutter) 2.2rem;
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,219,.55);
 }
 .footer__credit a{color:var(--gold-bright);border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
 .footer__credit a:hover{color:#fff;border-color:currentColor}
